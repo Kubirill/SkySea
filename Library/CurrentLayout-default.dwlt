@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1522
     height: 717
-  m_MinSize: {x: 677, y: 492}
+  m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 35
+  controlID: 41
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 1144
     height: 717
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 36
+  controlID: 42
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1144
     height: 445
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 37
+  controlID: 43
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,8 +185,8 @@ MonoBehaviour:
     y: 0
     width: 203
     height: 445
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -423,9 +423,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a2cc0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: cceffdff6af0fdff
+      m_SelectedIDs: 48effdff
+      m_LastClickedID: -135352
+      m_ExpandedIDs: 1eeefdff52effdff9ef1fdff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.0970001, y: 0.92527676, z: 1.781745}
+    m_Target: {x: 1.2906529, y: 2.613898, z: -4.4583817}
     speed: 2
-    m_Value: {x: -2.0970001, y: 0.92527676, z: 1.781745}
+    m_Value: {x: 1.2906529, y: 2.613898, z: -4.4583817}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -533,13 +533,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.091470145, y: 0.87404335, z: -0.18110245, w: -0.4414571}
+    m_Target: {x: -0.17540029, y: 0.10374857, z: -0.018590596, w: -0.9788443}
     speed: 2
-    m_Value: {x: -0.09306953, y: 0.8728329, z: -0.18358427, w: -0.44249022}
+    m_Value: {x: -0.17539935, y: 0.10374801, z: -0.018590495, w: -0.97883904}
   m_Size:
-    m_Target: 10
+    m_Target: 1.4660254
     speed: 2
-    m_Value: 10
+    m_Value: 1.4660254
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -629,20 +629,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ModelsAssets/Fantasy Skybox FREE/Materials/Classic
+    - Assets/Kubirill/Scripts
   m_ViewMode: 1
-  m_StartGridSize: 62
+  m_StartGridSize: 85
   m_LastFolders:
-  - Assets/ModelsAssets/Fantasy Skybox FREE/Materials/Classic
-  m_LastFoldersGridSize: 62
+  - Assets/Kubirill/Scripts
+  m_LastFoldersGridSize: 85
   m_LastProjectPath: D:\UnityProject\Sky sea\SkySea
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 25}
-    m_SelectedIDs: a2cc0000
-    m_LastClickedID: 52386
-    m_ExpandedIDs: 00000000e0cb0000e6cb0000e8cb0000f2cb0000f8cb000080cc00009ccc000000ca9a3b
+    scrollPos: {x: 0, y: 41}
+    m_SelectedIDs: 42d60000
+    m_LastClickedID: 54850
+    m_ExpandedIDs: 000000003acf000042cf00004acf00004ccf000050cf0000f2cf0000f4cf000022d6000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -670,7 +670,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e0cb0000
+    m_ExpandedIDs: 000000003acf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -723,7 +723,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 62
+    m_GridSize: 85
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 127
 --- !u!114 &18
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -8252
+  m_LastSelectedObjectID: 54838
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
