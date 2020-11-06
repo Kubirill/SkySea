@@ -105,7 +105,7 @@ Material:
     - _WaveFreq: 68
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmisColor: {r: 0.7764706, g: 0.96589756, b: 1, a: 0}
+    - _EmisColor: {r: 0.759434, g: 0.9232098, b: 1, a: 0}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _Scale: {r: 1, g: 1, b: 1, a: 1}
