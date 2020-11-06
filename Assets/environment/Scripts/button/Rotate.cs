@@ -6,10 +6,9 @@ public class Rotate : MonoBehaviour {
 	[SerializeField] bool left;
 	[SerializeField] float smooth = 0.3f;
 	[SerializeField] float angle = 15;
-	float rotAngle = 0;
 
-	private void OnTriggerEnter () {
-		rotAngle += left ? -angle : angle;
-		plot.DORotate (new Vector3 (0, rotAngle, 0), smooth);
-	}
+	private void OnTriggerEnter () =>
+		plot.DORotate (new Vector3 (0, plot.rotation.eulerAngles.y +
+			(angle * (left ? -1 : 1)), 0), smooth);
+
 }
