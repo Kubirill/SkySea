@@ -1,0 +1,2 @@
+Assets/ModelsAssets/* filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/* filter=lfs diff=lfs merge=lfs -text
