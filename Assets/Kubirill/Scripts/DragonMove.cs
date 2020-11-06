@@ -33,7 +33,7 @@ public class DragonMove : MonoBehaviour
         }
         if (target.activeInHierarchy)
         {
-            if ((Vector3.Distance(target.transform.position - new Vector3(0, target.transform.position.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) > 0.4f)) anim.SetBool("Finish", false);
+            if ((Vector3.Distance(target.transform.position - new Vector3(0, target.transform.position.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) > 0.5f)) anim.SetBool("Finish", false);
             else
             {
 
@@ -41,7 +41,8 @@ public class DragonMove : MonoBehaviour
                 {
                     transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), 0.1f);
 
-                    transform.DOMove ( new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z),1);
+                    transform.transform.localPosition= new Vector3(target.transform.localPosition.x, transform.localPosition.y, target.transform.localPosition.z);
+                    transform.transform.DOPause();
                 }
                 anim.SetBool("Finish", true);
                 rb.DOPause();
@@ -68,7 +69,7 @@ public class DragonMove : MonoBehaviour
             transform.DOLookAt(target.transform.position + addTarget, duration / 5);
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
-                 rb.DOMove(target.transform.position + addTarget, duration);
+                 transform.DOLocalMove(target.transform.localPosition + addTarget, duration);
                
             }
         }
