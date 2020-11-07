@@ -7,7 +7,7 @@ public class DragonMove : MonoBehaviour
 {
     Vector3 start;
     Rigidbody rb;
-    Animator anim;
+    public Animator anim;
     string playing = "deeze";
     public GameObject target;
     public GameObject targetLazer;
@@ -33,7 +33,7 @@ public class DragonMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFood&& Vector3.Distance(transform.position, target.transform.position)>15)
+        if (isFood&& Vector3.Distance(transform.position, target.transform.position)>25)
         {
             target = targetLazer;
             isFood = false;
@@ -76,15 +76,14 @@ public class DragonMove : MonoBehaviour
         if (!anim.GetBool("Finish"))
         {
             addTarget = Vector3.zero;
-            if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 1f, 0);
+            if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 0.5f, 0);
 
 
             rb.useGravity = false;
             transform.DOLookAt(target.transform.position + addTarget, duration / 5);
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
-                transform.DOLocalMove(target.transform.localPosition + addTarget, duration - (isFood ? 1 : 0));
-                Debug.Log(target.transform.localPosition + addTarget);
+                transform.DOLocalMove( transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position)  + addTarget, duration - (isFood ? 1 : 0));
             }
         }
 
@@ -98,7 +97,7 @@ public class DragonMove : MonoBehaviour
             anim.SetTrigger("Food");
         }
     }
-    
+
     public void Eat()
     {
         if (isFood)
@@ -107,7 +106,7 @@ public class DragonMove : MonoBehaviour
             target = targetLazer;
             isFood = false;
         }
-        
+
     }
     public void LateUpdate()
     {
