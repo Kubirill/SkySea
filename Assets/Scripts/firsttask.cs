@@ -23,7 +23,7 @@ public class firsttask : MonoBehaviour {
 		goalRight.DORotate (new Vector3 (0, -90, 0), 10);
 		cloud.transform.DOScale (new Vector3 (0, 0, 0), 5f);
 		Button.DOScale (new Vector3 (0, 0, 0), 0.1f);
-		Destroy (Button.gameObject, 7);
+		//Destroy (Button.gameObject, 12);
 		Destroy (cloud.gameObject, 5);
 	}
 }

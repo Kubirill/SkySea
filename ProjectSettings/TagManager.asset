@@ -8,6 +8,7 @@ TagManager:
   - food
   - Dragon
   - Solid
+  - SafeZone
   layers:
   - Default
   - TransparentFX
