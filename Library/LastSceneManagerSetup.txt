@@ -1,9 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Main.unity
-=======
-- path: Assets/Kubirill/Scenes/DragonTest.unity
->>>>>>> PetsDevelop
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
