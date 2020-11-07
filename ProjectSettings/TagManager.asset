@@ -8,6 +8,7 @@ TagManager:
   - food
   - Dragon
   - Solid
+  - barrel
   layers:
   - Default
   - TransparentFX
