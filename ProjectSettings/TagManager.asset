@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - food
+  - Dragon
+  - Solid
   layers:
   - Default
   - TransparentFX

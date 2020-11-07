@@ -1087,6 +1087,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 641972123976946936}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1024588875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8579626805849351878, guid: 3b16e94dade60b04b9fe3f5844e8169b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1815832131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1037712294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: d75090a6aa124b747a842bf2b5ae80cd,
@@ -1910,6 +1916,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533944989485735954, guid: 3b16e94dade60b04b9fe3f5844e8169b,
+        type: 3}
+      propertyPath: targetLazer
+      value: 
+      objectReference: {fileID: 1024588875}
     - target: {fileID: 7058069059521822221, guid: 3b16e94dade60b04b9fe3f5844e8169b,
         type: 3}
       propertyPath: far clip plane
