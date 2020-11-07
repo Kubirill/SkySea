@@ -8,6 +8,7 @@ TagManager:
   - food
   - Dragon
   - Solid
+  - barrel
   - SafeZone
   layers:
   - Default
