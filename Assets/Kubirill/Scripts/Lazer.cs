@@ -21,9 +21,10 @@ public class Lazer : MonoBehaviour
         // But instead we want to collide against everything except layer 8. The ~ operator does this, it inverts a bitmask.
         //layerMask = ~layerMask;
         RaycastHit point;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward*3- Vector3.up/2),out point,MaxDistance,layerMask)&& (point.collider.gameObject.layer ==8))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward*2- Vector3.up),out point,MaxDistance,layerMask)&& (point.collider.gameObject.layer ==8))
         {
-            
+            if (Vector3.Distance(transform.position, point.transform.position) > 15) lazerPoint.GetComponent<MeshRenderer>().enabled = true;
+            else lazerPoint.GetComponent<MeshRenderer>().enabled = false;
             lazerPoint.SetActive(true);
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * point.distance, Color.red);
             lazerPoint.transform.position = new Vector3(point.point.x, point.point.y, point.point.z);
