@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-0.8076103925704956,"y":12.25060749053955,"z":-2.1314849853515627},"rotation":{"x":-0.01768413372337818,"y":-0.021316932514309884,"z":-0.00040854321559891105,"w":0.9996358156204224},"size":11.748309135437012,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":10.616398811340332,"y":-25.785932540893556,"z":63.451194763183597},"rotation":{"x":-0.2209399938583374,"y":-0.09288328886032105,"z":0.021149661391973497,"w":-0.9706414341926575},"size":32.55003356933594,"orthographic":false}
+>>>>>>> PetsDevelop

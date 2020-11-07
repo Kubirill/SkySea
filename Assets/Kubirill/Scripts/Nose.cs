@@ -16,7 +16,7 @@ public class Nose : MonoBehaviour
         if (other.gameObject.tag == "Solid")
         {
             GetComponentInParent<Animator>().SetTrigger("CollizionInFront");
-            
+            transform.parent.position = transform.parent.position - transform.parent.forward*3;
         }
 
     }
