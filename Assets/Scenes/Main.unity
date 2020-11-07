@@ -23776,8 +23776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hero: {fileID: 7058069059826884284}
-  speed: 10
-  maxspeed: 20
+  speed: 5
+  maxspeed: 10
 --- !u!54 &7058069060438858490
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25144,13 +25144,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7058069061195946932}
-  m_LocalRotation: {x: -0.11269334, y: -0, z: -0, w: 0.9936298}
-  m_LocalPosition: {x: 0, y: 4.369999, z: -0.9899998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.69, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7058069059826884284}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -12.941001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7058069061195946932
 GameObject:
   m_ObjectHideFlags: 0
