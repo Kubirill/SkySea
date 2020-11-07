@@ -8,13 +8,22 @@ public class Go : MonoBehaviour {
     [SerializeField] float maxspeed = 20;
     Transform buff;
     bool afterGo = false;
+
+    [SerializeField] AudioClip buttonSound;
+    AudioSource _audioSource;
+    private void Start () => _audioSource = this.gameObject.GetComponent<AudioSource> ();
+
     public void OnTriggerStay () => move ();
     // smooth for start
-    private void OnTriggerEnter (Collider other) => DOTween.To (() => speed, x => speed = x, maxspeed, 1);
+    private void OnTriggerEnter (Collider other) {
+        _audioSource.Play ();
+        DOTween.To (() => speed, x => speed = x, maxspeed, 1);
+    }
     // smooth for end
     private void OnTriggerExit () {
         DOTween.To (() => speed, x => speed = x, 0, 1);
         afterGo = true;
+        _audioSource.Play ();
         StartCoroutine (AfterMove ());
     }
     IEnumerator AfterMove () {
