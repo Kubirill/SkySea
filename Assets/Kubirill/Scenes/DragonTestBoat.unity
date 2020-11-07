@@ -7556,8 +7556,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2999996, y: 2.1811275, z: 1.2999997}
-  m_Center: {x: 0, y: 1.5905638, z: 0}
+  m_Size: {x: 1.5, y: 6, z: 1.5}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!23 &373334329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17361,8 +17361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plot: {fileID: 1803592913}
   left: 0
-  smooth: 2
-  angle: 10
+  smooth: 1
+  angle: 5
   buttonSound: {fileID: 0}
 --- !u!54 &831499039
 Rigidbody:
@@ -17391,7 +17391,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3, y: 5, z: 1.3}
+  m_Size: {x: 1.5, y: 6, z: 1.5}
   m_Center: {x: 0, y: 3, z: 0}
 --- !u!23 &831499041
 MeshRenderer:
@@ -18613,7 +18613,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: -0.0000009536743}
 --- !u!23 &872783922
 MeshRenderer:
@@ -25423,7 +25423,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: -0.00000047683716}
 --- !u!23 &1181446875
 MeshRenderer:
@@ -28048,22 +28048,22 @@ PrefabInstance:
     - target: {fileID: 1649365802916024264, guid: e31a58e1c6d45da40b7cae39f482be73,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1649365802916024268, guid: e31a58e1c6d45da40b7cae39f482be73,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5950751
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1649365802916024268, guid: e31a58e1c6d45da40b7cae39f482be73,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0819397
+      value: 0.736
       objectReference: {fileID: 0}
     - target: {fileID: 1649365802916024268, guid: e31a58e1c6d45da40b7cae39f482be73,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.7980614
+      value: 4.472
       objectReference: {fileID: 0}
     - target: {fileID: 1649365802916024268, guid: e31a58e1c6d45da40b7cae39f482be73,
         type: 3}
@@ -28104,6 +28104,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649365804313061412, guid: e31a58e1c6d45da40b7cae39f482be73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1649365804313061413, guid: e31a58e1c6d45da40b7cae39f482be73,
+        type: 3}
+      propertyPath: m_Range
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e31a58e1c6d45da40b7cae39f482be73, type: 3}
@@ -30312,6 +30322,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: micro_dragon_fino_animated
       objectReference: {fileID: 0}
+    - target: {fileID: 7393705840660724335, guid: de3a816f44d522f4d9170daea9c0d5a5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393705840661210692, guid: de3a816f44d522f4d9170daea9c0d5a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30495,6 +30510,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1394940235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394940232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.56, z: 0}
 --- !u!1 &1405868684
 GameObject:
   m_ObjectHideFlags: 0
@@ -31857,8 +31885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plot: {fileID: 1803592913}
   left: 1
-  smooth: 2
-  angle: 15
+  smooth: 1
+  angle: 5
   buttonSound: {fileID: 0}
 --- !u!54 &1468573085
 Rigidbody:
@@ -31887,8 +31915,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3, y: 5, z: 1.3}
-  m_Center: {x: 0, y: 3, z: 0}
+  m_Size: {x: 1.5, y: 6, z: 1.5}
+  m_Center: {x: -0, y: 3, z: 0}
 --- !u!23 &1468573087
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41995,7 +42023,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 2}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: -0.00000047683716}
 --- !u!23 &1910965724
 MeshRenderer:

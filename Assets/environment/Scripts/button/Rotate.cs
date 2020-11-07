@@ -15,8 +15,12 @@ public class Rotate : MonoBehaviour {
 
 	private void OnTriggerExit () => _audioSource.Play ();
 
-	private void OnTriggerStay () =>
-		plot.DORotate (new Vector3 (0, plot.rotation.eulerAngles.y +
-			(angle * (left ? -1 : 1)), 0), smooth);
-
+    /*private void OnTriggerStay () =>
+		 plot.DORotate (new Vector3 (0, plot.rotation.eulerAngles.y +
+			(angle * (left ? -1 : 1)), 0), smooth);*/
+    public void OnTriggerStay(Collider other)
+    {
+		
+		if ((other.tag=="Dragon")&&other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish")) plot.DORotate(new Vector3(0, plot.rotation.eulerAngles.y +	(angle * (left ? -1 : 1)), 0), smooth);
+	}
 }
