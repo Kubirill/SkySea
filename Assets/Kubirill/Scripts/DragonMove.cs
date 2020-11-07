@@ -33,7 +33,7 @@ public class DragonMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isFood&& Vector3.Distance(transform.position, target.transform.position)>15)
+        if (isFood&& Vector3.Distance(transform.position, target.transform.position)>25)
         {
             target = targetLazer;
             isFood = false;
