@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 //Play a list of tracks in random order
 public class MusicPlayList : MonoBehaviour {
     [SerializeField] AudioClip[] _musicClips;
