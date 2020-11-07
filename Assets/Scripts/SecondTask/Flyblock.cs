@@ -13,10 +13,5 @@ public class Flyblock : MonoBehaviour {
         path.enabled = true;
     }
 
-    private void FixedUpdate () {
-        if (Input.GetKeyDown (KeyCode.Q))
-            go ();
-
-    }
 
 }
