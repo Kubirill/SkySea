@@ -62,3 +62,5 @@ sysinfo.txt
 crashlytics-build.properties
 Library/SourceAssetDB
 Library/SourceAssetDB
+
+.vscode/settings.json
