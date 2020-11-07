@@ -7,11 +7,13 @@ public class Cats : MonoBehaviour
 {
     public GameObject player;
     public GameObject dragon;
+    public Transform targetJump;
 
     GameObject afraid;
     Rigidbody rb;
     Animator anim;
     bool isAfraid = true;
+    bool isStop = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,23 +25,27 @@ public class Cats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isAfraid)
+        if (!isStop)
         {
-            transform.LookAt(new Vector3(afraid.transform.position.x, transform.position.y, afraid.transform.position.z));
-            if (Vector3.Distance(transform.position, dragon.transform.position) < 5) afraid = dragon;
-            if (Vector3.Distance(transform.position, dragon.transform.position) < 3)
+            if (isAfraid)
             {
-                anim.SetTrigger("Walk");
-                transform.position = transform.position - transform.forward / 5;
+                transform.LookAt(new Vector3(afraid.transform.position.x, transform.position.y, afraid.transform.position.z));
+                if (Vector3.Distance(transform.position, dragon.transform.position) < 5) afraid = dragon;
+                if (Vector3.Distance(transform.position, dragon.transform.position) < 3)
+                {
+                    anim.SetTrigger("Walk");
+                    transform.position = transform.position - transform.forward / 5;
+
+                }
 
             }
-
+            else
+            {
+                anim.SetTrigger("Idle");
+                transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
+            }
         }
-        else
-        {
-            anim.SetTrigger("Idle");
-            transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
-        }
+        
     }
     public void OnCollisionEnter(Collision collision)
     {
@@ -59,6 +65,14 @@ public class Cats : MonoBehaviour
             isAfraid = false;
             transform.parent = dragon.transform.parent;
             anim.SetTrigger("Idle");
+        }
+        if (other.tag == "StopForCats")
+        {
+            transform.parent = null;
+            transform.DOJump(targetJump.position, 5, 1, 3);
+            transform.LookAt(targetJump.position);
+            anim.SetTrigger("Walk");
+            isStop = true;
         }
     }
 }
