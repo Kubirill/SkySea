@@ -104,7 +104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 242649762931209660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a9748f6d14a9d041b511ab8b5d51793, type: 3}
+  m_Script: {fileID: 11500000, guid: 60bad9be9866ff745816a177a407b93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &5360536083201588359
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 7393705840660724335}
   m_Layer: 0
   m_Name: micro_dragon_fino_animated
-  m_TagString: Untagged
+  m_TagString: Dragon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
