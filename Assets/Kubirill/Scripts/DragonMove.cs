@@ -7,7 +7,7 @@ public class DragonMove : MonoBehaviour
 {
     Vector3 start;
     Rigidbody rb;
-    Animator anim;
+    public Animator anim;
     string playing = "deeze";
     public GameObject target;
     public GameObject targetLazer;
@@ -76,7 +76,7 @@ public class DragonMove : MonoBehaviour
         if (!anim.GetBool("Finish"))
         {
             addTarget = Vector3.zero;
-            if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 1f, 0);
+            if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 0.5f, 0);
 
 
             rb.useGravity = false;
