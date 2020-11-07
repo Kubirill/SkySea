@@ -4,4 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Kubirill/Scenes/Micro Dragon Fino.unity
+    guid: 28b5163d7b092244c9029dd6a3faf84b
+  m_configObjects: {}
+=======
   m_Scenes: []
+>>>>>>> environment
