@@ -65,14 +65,20 @@ public class Cats : MonoBehaviour
             isAfraid = false;
             transform.parent = dragon.transform.parent;
             anim.SetTrigger("Idle");
+            rb.isKinematic = true;
+            rb.useGravity = false;
+            //GetComponent<Collider>().isTrigger = true;
         }
         if (other.tag == "StopForCats")
         {
+            rb.isKinematic = false;
+            rb.useGravity = true;
             transform.parent = null;
             transform.DOJump(targetJump.position, 5, 1, 3);
             transform.LookAt(targetJump.position);
             anim.SetTrigger("Walk");
             isStop = true;
+
         }
     }
 }
