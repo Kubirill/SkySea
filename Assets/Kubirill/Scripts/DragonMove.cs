@@ -46,7 +46,7 @@ public class DragonMove : MonoBehaviour
         }
         if (target.activeInHierarchy)
         {
-            if ((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 1f)) anim.SetBool("Finish", false);
+            if (((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 0.5f))||(addTarget==Vector3.zero)) anim.SetBool("Finish", false);
             else
             {
 
@@ -55,7 +55,7 @@ public class DragonMove : MonoBehaviour
                     //transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), 0.1f);
                     rb.useGravity = true;
                     rb.velocity = Vector3.zero;
-                    transform.transform.localPosition= new Vector3(target.transform.localPosition.x, transform.localPosition.y, target.transform.localPosition.z);
+                    //transform.transform.localPosition= new Vector3(target.transform.localPosition.x, transform.localPosition.y, target.transform.localPosition.z);
                     transform.transform.DOPause();
                 }
                 anim.SetBool("Finish", true);
@@ -76,7 +76,7 @@ public class DragonMove : MonoBehaviour
         if (!anim.GetBool("Finish"))
         {
             addTarget = Vector3.zero;
-            if (Vector3.Distance(target.transform.up, Vector3.up) < 0.2) addTarget = new Vector3(0, 1f, 0);
+            if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 1f, 0);
 
 
             rb.useGravity = false;
@@ -98,14 +98,7 @@ public class DragonMove : MonoBehaviour
             anim.SetTrigger("Food");
         }
     }
-    /*public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "food")
-        {
-            target = collision.gameObject;
-            anim.SetTrigger("Food");
-        }
-    }*/
+    
     public void Eat()
     {
         if (isFood)

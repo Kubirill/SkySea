@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ public class food : MonoBehaviour
 
             script.target = gameObject;
             script.isFood = true;
+
         }
     }
 
@@ -26,6 +28,7 @@ public class food : MonoBehaviour
         {
             script.target = gameObject;
             script.isFood = true;
+           
         }
     }
 }
