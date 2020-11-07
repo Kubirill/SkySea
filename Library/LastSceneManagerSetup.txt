@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Kubirill/DragonTest.unity
+- path: Assets/environment/Scenes/Demo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

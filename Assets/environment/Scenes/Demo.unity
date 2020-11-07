@@ -491,6 +491,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8917682323149893026, guid: f611cae56b3293d499399674c8dd4d07,
         type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136030361546964698, guid: 56e969db57da4ba47aefa6574662cfd9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136030361546964699, guid: 56e969db57da4ba47aefa6574662cfd9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136030361546964702, guid: 56e969db57da4ba47aefa6574662cfd9,
+        type: 3}
+      propertyPath: far clip plane
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829730677022781969, guid: 56e969db57da4ba47aefa6574662cfd9,
+        type: 3}
+      propertyPath: m_Name
+      value: plotaALL
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829730677022781970, guid: 56e969db57da4ba47aefa6574662cfd9,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 585.0511
       objectReference: {fileID: 0}
