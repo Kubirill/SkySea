@@ -11,7 +11,7 @@ public class Voice : MonoBehaviour {
 	//Play a list of voices in random order
 	void PlayNextSong () {
 		PlayVoice ();
-		Invoke ("PlayNextSong", _audioSource.clip.length + Random.Range (3, 30));
+		Invoke ("PlayNextSong", _audioSource.clip.length + Random.Range (1, 15));
 	}
 	public void PlayVoice () {
 		if (_audioSource != null) {
