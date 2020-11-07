@@ -22,7 +22,7 @@ public class DragonMove : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -46,13 +46,13 @@ public class DragonMove : MonoBehaviour
                 }
                 anim.SetBool("Finish", true);
                 rb.DOPause();
-                
+
             }
 
             anim.SetBool("FindTarget", true);
-            
-            
-            
+
+
+
         }
         else
         {
@@ -70,12 +70,9 @@ public class DragonMove : MonoBehaviour
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
                  transform.DOLocalMove(target.transform.localPosition + addTarget, duration);
-               
+
             }
         }
-
-
-        
 
     }
 }

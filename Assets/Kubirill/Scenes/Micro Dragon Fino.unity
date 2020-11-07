@@ -3525,6 +3525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hero: {fileID: 1164888307}
   speed: 10
+  maxspeed: 20
 --- !u!65 &702860471
 BoxCollider:
   m_ObjectHideFlags: 0
