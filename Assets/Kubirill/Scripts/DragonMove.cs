@@ -84,7 +84,7 @@ public class DragonMove : MonoBehaviour
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
                 transform.DOLocalMove(target.transform.localPosition + addTarget, duration - (isFood ? 1 : 0));
-                Debug.Log(target.transform.localPosition + addTarget);
+                print ($"87. DragonMove -> target.transform.localPosition + addTarget : {target.transform.localPosition + addTarget}");
             }
         }
 
@@ -98,7 +98,7 @@ public class DragonMove : MonoBehaviour
             anim.SetTrigger("Food");
         }
     }
-    
+
     public void Eat()
     {
         if (isFood)
@@ -107,7 +107,7 @@ public class DragonMove : MonoBehaviour
             target = targetLazer;
             isFood = false;
         }
-        
+
     }
     public void LateUpdate()
     {
