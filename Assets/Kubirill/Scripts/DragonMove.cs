@@ -46,6 +46,12 @@ public class DragonMove : MonoBehaviour
             transform.DOLookAt(pointOfInteres.position, duration/5);
             //rb.useGravity = true;
         }
+        if ((anim.GetCurrentAnimatorStateInfo(0).IsName("idle")|| (anim.GetCurrentAnimatorStateInfo(0).IsName("stirr_on_ground")) && pointOfInteres !=player))
+        {
+            
+            transform.DOLookAt(pointOfInteres.position, duration / 5);
+            //rb.useGravity = true;
+        }
         if (target.activeInHierarchy)
         {
             if (((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 0.5f))||(addTarget==Vector3.zero)) anim.SetBool("Finish", false);
