@@ -13,18 +13,30 @@ public class Go : MonoBehaviour {
     AudioSource _audioSource;
     private void Start () => _audioSource = this.gameObject.GetComponent<AudioSource> ();
 
-    public void OnTriggerStay () => move ();
+    /*public void OnTriggerStay () => move ();*/
+    public void OnTriggerStay(Collider other)
+    {
+
+        if ((other.tag == "Dragon") && other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish")) move();
+    }
     // smooth for start
     private void OnTriggerEnter (Collider other) {
-        _audioSource.Play ();
-        DOTween.To (() => speed, x => speed = x, maxspeed, 1);
+        
+            _audioSource.Play();
+            DOTween.To(() => speed, x => speed = x, maxspeed, 1);
+        
+            
     }
     // smooth for end
-    private void OnTriggerExit () {
-        DOTween.To (() => speed, x => speed = x, 0, 1);
-        afterGo = true;
-        _audioSource.Play ();
-        StartCoroutine (AfterMove ());
+    private void OnTriggerExit (Collider other) {
+        if ((other.tag == "Dragon") && other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
+        {
+            DOTween.To(() => speed, x => speed = x, 0, 1);
+            afterGo = true;
+            _audioSource.Play();
+            StartCoroutine(AfterMove());
+        }
+            
     }
     IEnumerator AfterMove () {
         yield return new WaitForSeconds (1f);

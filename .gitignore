@@ -9,7 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-
+/[Ll]ibrary/*
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
@@ -60,4 +60,7 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+Library/SourceAssetDB
+Library/SourceAssetDB
+
 .vscode/settings.json

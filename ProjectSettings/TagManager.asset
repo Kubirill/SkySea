@@ -9,6 +9,8 @@ TagManager:
   - Dragon
   - Solid
   - barrel
+  - SafeZone
+  - StopForCats
   layers:
   - Default
   - TransparentFX
