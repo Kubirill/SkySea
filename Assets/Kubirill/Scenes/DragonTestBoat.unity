@@ -4978,7 +4978,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8635343353901422025}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &195892437
+--- !u!65 &195892440
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12938,7 +12938,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 756885827}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &488692695
+--- !u!65 &488692698
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21570,7 +21570,7 @@ Transform:
   m_LocalScale: {x: 1.2764, y: 1.2764, z: 1.2764}
   m_Children: []
   m_Father: {fileID: 1213583533}
-  m_RootOrder: 22
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &751962918
 Light:
@@ -31572,7 +31572,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 471978328}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1067176167
+--- !u!65 &1067176170
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36514,6 +36514,7 @@ Transform:
   - {fileID: 562682058}
   - {fileID: 1183394911}
   - {fileID: 1625951947}
+  - {fileID: 751962917}
   - {fileID: 1491646587}
   - {fileID: 1036211203}
   - {fileID: 87145681}
@@ -36528,7 +36529,6 @@ Transform:
   - {fileID: 302668149}
   - {fileID: 1126224064}
   - {fileID: 1455420973}
-  - {fileID: 751962917}
   - {fileID: 520938489}
   - {fileID: 1929516797}
   - {fileID: 1463718783}
@@ -43018,7 +43018,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8635343353901422025}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1440116949
+--- !u!65 &1440116952
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47307,7 +47307,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 756885827}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1563860569
+--- !u!65 &1563860572
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52978,7 +52978,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 471978328}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1792299764
+--- !u!65 &1792299767
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

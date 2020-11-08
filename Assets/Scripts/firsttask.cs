@@ -7,9 +7,14 @@ public class firsttask : MonoBehaviour {
 	[SerializeField] Transform goalLeft;
 	[SerializeField] Transform goalRight;
 	[SerializeField] Transform Button;
+	GameObject dragon;
 
 	AudioSource _audioSource;
-	private void Start () => _audioSource = this.gameObject.GetComponent<AudioSource> ();
+	private void Start()
+	{
+		_audioSource = this.gameObject.GetComponent<AudioSource>();
+		dragon = GameObject.FindGameObjectWithTag("Dragon");
+	}
 
 	private void OnTriggerEnter () => pressB ();
 
@@ -19,6 +24,7 @@ public class firsttask : MonoBehaviour {
 	}
 	void pressB () {
 		_audioSource.Play ();
+		dragon.GetComponent<Animator>().SetTrigger("CatsSave");
 		goalLeft.DORotate (new Vector3 (0, 90, 0), 10);
 		goalRight.DORotate (new Vector3 (0, -90, 0), 10);
 		cloud.transform.DOScale (new Vector3 (0, 0, 0), 5f);

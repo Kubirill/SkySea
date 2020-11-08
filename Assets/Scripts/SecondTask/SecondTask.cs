@@ -10,10 +10,12 @@ public class SecondTask : MonoBehaviour {
 	[SerializeField] GameObject rope;
 	[SerializeField] GameObject fallRock;
 	[SerializeField] Transform catapult;
+	GameObject dragon;
 
 	AudioSource _audioSource;
 	private void Start () {
 		_audioSource = this.gameObject.GetComponent<AudioSource> ();
+		dragon = GameObject.FindGameObjectWithTag("Dragon");
 	}
 
 	private void OnTriggerEnter () => cut ();
@@ -24,6 +26,7 @@ public class SecondTask : MonoBehaviour {
 	}
 	void cut () {
 		_audioSource.Play ();
+		dragon.GetComponent<Animator>().SetTrigger("CatsSave");
 		rope.GetComponent<AudioSource> ().Play ();
 		Destroy (rope);
 		var rb = fallRock.GetComponent<Rigidbody> ();
@@ -38,7 +41,9 @@ public class SecondTask : MonoBehaviour {
 		StartCoroutine (OpenDoors (1.3f));
 	}
 	IEnumerator OpenDoors (float time) {
+
 		yield return new WaitForSeconds (time);
+		dragon.GetComponent<Animator>().SetTrigger("CatsSave");
 		goalLeft.DORotate (new Vector3 (0, 90, 0), 10);
 		goalRight.DORotate (new Vector3 (0, -90, 0), 10);
 	}
