@@ -9,6 +9,7 @@ public class task : MonoBehaviour {
     [SerializeField] Transform Catapult;
     [SerializeField] Transform Barrel;
     [SerializeField] Transform shootBarrel;
+    [SerializeField] GameObject ParentShootBarrel;
     bool shootBarrelOnRightPlace = false;
     AudioSource _audioSource;
     [SerializeField] GameObject rope0;
@@ -24,16 +25,18 @@ public class task : MonoBehaviour {
         switch (id) {
             case 0:
                 print ("cut 0");
-                if (cut[1] == true && shootBarrelOnRightPlace)
+                if (cut[1] == true && shootBarrelOnRightPlace) {
                     fallBarrel ();
-                Destroy (rope0);
-                Destroy (rope2);
+                    Destroy (rope0);
+                    Destroy (rope2);
+                }
                 break;
             case 1:
                 print ("cut 1");
-                if (cut[0] == true && shootBarrelOnRightPlace)
+                if (shootBarrelOnRightPlace) {
                     fallBarrel ();
-                Destroy (rope1);
+                    Destroy (rope1);
+                }
                 break;
             case 2:
                 print ("cut 2");
@@ -57,25 +60,27 @@ public class task : MonoBehaviour {
         ShootBarrelUnfreeze ();
     }
     void fallBarrel () {
-        Barrel.DOMove (new Vector3 (Barrel.position.x, Barrel.position.y - 75, Barrel.position.z), 0.4f);
-        StartCoroutine (shoot (0.4f));
+        Barrel.DOMove (new Vector3 (Barrel.position.x, Barrel.position.y - 205.5f, Barrel.position.z), 2f);
+        StartCoroutine (shoot (2f));
     }
     void ShootBarrelUnfreeze () =>
         shootBarrel.GetComponent<Rigidbody> ().isKinematic = false;
 
     public void OnRightPlaceShootBarrel () {
         shootBarrelOnRightPlace = true;
+        shootBarrel.GetComponent<Rigidbody> ().isKinematic = true;
         print ($"69. task -> shootBarrelOnRightPlace : {shootBarrelOnRightPlace}");
     }
 
     IEnumerator shoot (float time) {
-        shootBarrel.GetComponent<PathFollower> ().enabled = true;
         yield return new WaitForSeconds (time);
+        shootBarrel.GetComponent<Rigidbody> ().isKinematic = false;
+        ParentShootBarrel.GetComponent<PathFollower> ().enabled = true;
         StartCoroutine (openDoor ());
-        _audioSource.Play ();
+        // _audioSource.Play ();
     }
     IEnumerator openDoor () {
-        yield return new WaitForSeconds (1f);
+        yield return new WaitForSeconds (0.3f);
         leftDoor.DORotate (new Vector3 (0, 90, 0), 10);
         RightDoor.DORotate (new Vector3 (0, -90, 0), 10);
     }
