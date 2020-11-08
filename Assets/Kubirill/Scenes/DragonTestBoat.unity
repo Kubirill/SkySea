@@ -2205,6 +2205,7 @@ GameObject:
   - component: {fileID: 86610042}
   - component: {fileID: 86610041}
   - component: {fileID: 86610040}
+  - component: {fileID: 86610043}
   m_Layer: 0
   m_Name: sheep_walk (4)
   m_TagString: Untagged
@@ -2276,6 +2277,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &86610043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86610038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &87145680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5003,6 +5017,7 @@ GameObject:
   - component: {fileID: 204285368}
   - component: {fileID: 204285367}
   - component: {fileID: 204285366}
+  - component: {fileID: 204285369}
   m_Layer: 0
   m_Name: sheep_walk (5)
   m_TagString: Untagged
@@ -5074,6 +5089,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &204285369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204285364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &210197726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6390,6 +6418,7 @@ GameObject:
   - component: {fileID: 220920214}
   - component: {fileID: 220920213}
   - component: {fileID: 220920212}
+  - component: {fileID: 220920217}
   m_Layer: 0
   m_Name: Mesh253 (3)
   m_TagString: barrel
@@ -6503,6 +6532,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220920210}
   m_Mesh: {fileID: 4300504, guid: b2c61055c4a01ad43b08434f8178e1c9, type: 3}
+--- !u!114 &220920217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220920210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &220949400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18297,6 +18339,7 @@ GameObject:
   - component: {fileID: 639622685}
   - component: {fileID: 639622684}
   - component: {fileID: 639622683}
+  - component: {fileID: 639622686}
   m_Layer: 0
   m_Name: sheep_walk
   m_TagString: Untagged
@@ -18368,6 +18411,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &639622686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639622681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &639756715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21140,6 +21196,7 @@ GameObject:
   - component: {fileID: 740593056}
   - component: {fileID: 740593055}
   - component: {fileID: 740593054}
+  - component: {fileID: 740593057}
   m_Layer: 0
   m_Name: sheep_walk (3)
   m_TagString: Untagged
@@ -21211,6 +21268,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &740593057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740593052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &741260240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22466,6 +22536,7 @@ GameObject:
   - component: {fileID: 768206698}
   - component: {fileID: 768206697}
   - component: {fileID: 768206696}
+  - component: {fileID: 768206699}
   m_Layer: 0
   m_Name: sheep_walk (1)
   m_TagString: Untagged
@@ -22537,6 +22608,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &768206699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768206694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1 &771773018
 GameObject:
   m_ObjectHideFlags: 0
@@ -22549,6 +22633,7 @@ GameObject:
   - component: {fileID: 771773022}
   - component: {fileID: 771773021}
   - component: {fileID: 771773020}
+  - component: {fileID: 771773023}
   m_Layer: 0
   m_Name: sheep_walk (2)
   m_TagString: Untagged
@@ -22620,6 +22705,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &771773023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771773018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1 &772821379
 GameObject:
   m_ObjectHideFlags: 0
@@ -37365,7 +37463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1238811920
 Light:
   m_ObjectHideFlags: 0
@@ -41643,6 +41741,25 @@ Transform:
   m_Father: {fileID: 1117590332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1370550632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8635343353193591383, guid: 1a12a71c06f63754db0f7a66caff5d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8635343353901422025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370550633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370550632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1 &1372677527
 GameObject:
   m_ObjectHideFlags: 0
@@ -48268,6 +48385,25 @@ Transform:
   m_Father: {fileID: 784683521}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 71.6, z: 0}
+--- !u!1 &1598734914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1228419803925864, guid: 21cba551342e0284a87bcb1672a662d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1679952461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1598734915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598734914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &1600270651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56260,7 +56396,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9433962, g: 0.7313207, b: 0.6808473, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
@@ -58711,6 +58847,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: e482b39d7ed22034ca6a61dd145ee82b, type: 3}
+--- !u!1 &1961143729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 753346228440170827, guid: b1f09974c3364cc428375eef151b98bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 756885827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961143735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961143729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 200
 --- !u!1001 &1961505733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59423,7 +59578,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9433962, g: 0.7313207, b: 0.6808473, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.9
   m_Range: 10
   m_SpotAngle: 30
@@ -62927,6 +63082,7 @@ GameObject:
   - component: {fileID: 2136408581}
   - component: {fileID: 2136408580}
   - component: {fileID: 2136408579}
+  - component: {fileID: 2136408582}
   m_Layer: 0
   m_Name: sheep_walk (6)
   m_TagString: Untagged
@@ -62998,6 +63154,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2136408582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136408577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1001 &2136491863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63960,6 +64129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4912150062953500}
   - component: {fileID: 137001745887292160}
+  - component: {fileID: 1401375855269375}
   m_Layer: 0
   m_Name: Bird1_Model
   m_TagString: Untagged
@@ -63967,6 +64137,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1401375855269375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401375855269374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed404b13be64dc641925269b766c863c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1 &1427513879675548
 GameObject:
   m_ObjectHideFlags: 0
