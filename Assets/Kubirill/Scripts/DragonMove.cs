@@ -13,6 +13,7 @@ public class DragonMove : MonoBehaviour
     public GameObject targetLazer;
     Vector3 addTarget = Vector3.zero;
     public Transform player;
+    public Transform pointOfInteres;
     public float duration;
     public float jump;
     public float jumpDuration;
@@ -41,7 +42,8 @@ public class DragonMove : MonoBehaviour
         if (target==targetLazer) isFood = false;
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("dizzy"))
         {
-            transform.DOLookAt(player.position, duration/5);
+            if (pointOfInteres == null) pointOfInteres = player;
+            transform.DOLookAt(pointOfInteres.position, duration/5);
             //rb.useGravity = true;
         }
         if (target.activeInHierarchy)
