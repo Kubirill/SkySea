@@ -54,8 +54,8 @@ public class task : MonoBehaviour {
     }
 
     void fallCatapults () {
-        Catapult.DOMove (new Vector3 (Catapult.position.x, Catapult.position.y - 152.5f, Catapult.position.z), 2f);
-        Catapult.DORotate (new Vector3 (-18, 0, 0), 2f);
+        Catapult.DOMove (new Vector3 (Catapult.position.x, Catapult.position.y - 145.5f, Catapult.position.z), 2f);
+        Catapult.DORotate (new Vector3 (-25, 0, 0), 2f);
         print ($"53. task ->  Catapult.position.y - 90 : { Catapult.position.y - 145}");
         ShootBarrelUnfreeze ();
     }
