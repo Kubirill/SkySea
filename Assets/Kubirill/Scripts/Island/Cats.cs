@@ -34,7 +34,7 @@ public class Cats : MonoBehaviour
                 if (Vector3.Distance(transform.position, dragon.transform.position) < 3)
                 {
                     anim.SetTrigger("Walk");
-                    transform.position = transform.position - transform.forward / 5;
+                    transform.position = new Vector3 (Mathf.Lerp(transform.position.x, transform.position.x - transform.forward.x / 5,0.1f), Mathf.Lerp(transform.position.y, transform.position.y - transform.forward.y / 5, 0.1f),Mathf.Lerp(transform.position.z, transform.position.z - transform.forward.z / 5, 0.1f));
 
                 }
 
@@ -67,7 +67,7 @@ public class Cats : MonoBehaviour
             anim.SetTrigger("Idle");
             rb.isKinematic = true;
             rb.useGravity = false;
-            //GetComponent<Collider>().isTrigger = true;
+            GetComponent<Collider>().isTrigger = true;
         }
         if (other.tag == "StopForCats")
         {
@@ -76,7 +76,7 @@ public class Cats : MonoBehaviour
             transform.parent = null;
             transform.DOJump(targetJump.position, 5, 1, 3);
             transform.LookAt(targetJump.position);
-            anim.SetTrigger("Walk");
+            anim.SetTrigger("Idle");
             isStop = true;
 
         }
