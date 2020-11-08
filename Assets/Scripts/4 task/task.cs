@@ -16,6 +16,8 @@ public class task : MonoBehaviour {
     [SerializeField] GameObject rope1;
     [SerializeField] GameObject rope2;
     bool[] cut = { false, false, false, false };
+    public Transform pointFall;
+    public Transform pointFallBarell;
 
     private void Start () {
         _audioSource = this.gameObject.GetComponent<AudioSource> ();
@@ -54,13 +56,13 @@ public class task : MonoBehaviour {
     }
 
     void fallCatapults () {
-        Catapult.DOMove (new Vector3 (Catapult.position.x, Catapult.position.y - 145.5f, Catapult.position.z), 2f);
+        Catapult.DOMove (new Vector3 (Catapult.position.x, pointFall.position.y, Catapult.position.z), 2f);
         Catapult.DORotate (new Vector3 (-25, 0, 0), 2f);
         print ($"53. task ->  Catapult.position.y - 90 : { Catapult.position.y - 145}");
         ShootBarrelUnfreeze ();
     }
     void fallBarrel () {
-        Barrel.DOMove (new Vector3 (Barrel.position.x, Barrel.position.y - 205.5f, Barrel.position.z), 2f);
+        Barrel.DOMove (new Vector3 (Barrel.position.x, pointFallBarell.position.y, Barrel.position.z), 2f);
         StartCoroutine (shoot (2f));
     }
     void ShootBarrelUnfreeze () =>
