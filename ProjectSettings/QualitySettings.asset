@@ -203,7 +203,7 @@ QualitySettings:
     - Windows Store Apps
   - serializedVersion: 2
     name: Phone
-    pixelLightCount: 5
+    pixelLightCount: 0
     shadows: 1
     shadowResolution: 2
     shadowProjection: 1
