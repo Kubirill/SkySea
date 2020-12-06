@@ -14800,6 +14800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lazerPoint: {fileID: 0}
+  useNormalLaser: 0
   MaxDistance: 0
 --- !u!1001 &520938488
 PrefabInstance:
@@ -41182,6 +41183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lazerPoint: {fileID: 1284571496}
+  useNormalLaser: 0
   MaxDistance: 50
 --- !u!114 &1354217070
 MonoBehaviour:
@@ -44620,6 +44622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lazerPoint: {fileID: 1284571496}
+  useNormalLaser: 0
   MaxDistance: 52.72
 --- !u!81 &1500547147
 AudioListener:
@@ -66969,6 +66972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lazerPoint: {fileID: 622467918}
+  useNormalLaser: 0
   MaxDistance: 50
 --- !u!1 &7434656899465395616
 GameObject:
