@@ -16,32 +16,28 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace GoogleVR.HelloVR
-{
+namespace GoogleVR.HelloVR {
     using System.Collections;
     using UnityEngine;
 
     /// <summary>Demonstrates the use of GvrHeadset events and APIs.</summary>
-    public class HeadsetDemoManager : MonoBehaviour
-    {
+    public class HeadsetDemoManager : MonoBehaviour {
         /// <summary>A visual representation of the Gvr Api's Safety Cylinder.</summary>
         public GameObject safetyRing;
 
         /// <summary>If `true`, this class logs status messages.  If `false`, it does not.</summary>
         public bool enableDebugLog = false;
-        private WaitForSeconds waitFourSeconds = new WaitForSeconds(4);
+        private WaitForSeconds waitFourSeconds = new WaitForSeconds (4);
 
-#region STANDALONE_DELEGATES
+        #region STANDALONE_DELEGATES
         /// <summary>An event which triggers when the safety region is entered or exited.</summary>
         /// <param name="enter">
         /// Value `true` if the safety region is being entered, or `false` if the safety region is
         /// being exited.
         /// </param>
-        public void OnSafetyRegionEvent(bool enter)
-        {
-            if (enableDebugLog)
-            {
-                Debug.Log("SafetyRegionEvent: " + (enter ? "enter" : "exit"));
+        public void OnSafetyRegionEvent (bool enter) {
+            if (enableDebugLog) {
+                Debug.Log ("SafetyRegionEvent: " + (enter ? "enter" : "exit"));
             }
         }
 
@@ -50,111 +46,92 @@ namespace GoogleVR.HelloVR
         /// <param name="recenterFlags">The flag context of the last recenter.</param>
         /// <param name="recenteredPosition">The positional reference of the last recenter.</param>
         /// <param name="recenteredOrientation">The rotation reference of the last recenter.</param>
-        public void OnRecenterEvent(GvrRecenterEventType recenterType,
-                                    GvrRecenterFlags recenterFlags,
-                                    Vector3 recenteredPosition,
-                                    Quaternion recenteredOrientation)
-        {
-            if (enableDebugLog)
-            {
-                Debug.Log(string.Format(
+        public void OnRecenterEvent (GvrRecenterEventType recenterType,
+            GvrRecenterFlags recenterFlags,
+            Vector3 recenteredPosition,
+            Quaternion recenteredOrientation) {
+            if (enableDebugLog) {
+                Debug.Log (string.Format (
                     "RecenterEvent: Type {0}, flags {1}\nPosition: {2}, Rotation: {3}",
                     recenterType, recenterFlags, recenteredPosition, recenteredOrientation));
             }
         }
-#endregion  // STANDALONE_DELEGATES
+        #endregion  // STANDALONE_DELEGATES
         /// <summary>Prints the floor height to console.</summary>
-        public void FindFloorHeight()
-        {
+        public void FindFloorHeight () {
             float floorHeight = 0.0f;
-            bool success = GvrHeadset.TryGetFloorHeight(ref floorHeight);
-            if (enableDebugLog)
-            {
-                Debug.Log("Floor height success " + success + "; value " + floorHeight);
+            bool success = GvrHeadset.TryGetFloorHeight (ref floorHeight);
+            if (enableDebugLog) {
+                Debug.Log ("Floor height success " + success + "; value " + floorHeight);
             }
         }
 
         /// <summary>
         /// Prints the reference transformation as of the last recenter to console.
         /// </summary>
-        public void FindRecenterTransform()
-        {
+        public void FindRecenterTransform () {
             Vector3 position = Vector3.zero;
             Quaternion rotation = Quaternion.identity;
-            bool success = GvrHeadset.TryGetRecenterTransform(ref position, ref rotation);
-            if (enableDebugLog)
-            {
-                Debug.Log("Recenter transform success " + success + "; value " + position + "; "
-                          + rotation);
+            bool success = GvrHeadset.TryGetRecenterTransform (ref position, ref rotation);
+            if (enableDebugLog) {
+                Debug.Log ("Recenter transform success " + success + "; value " + position + "; " +
+                    rotation);
             }
         }
 
         /// <summary>Prints the safety region's type to console.</summary>
-        public void FindSafetyRegionType()
-        {
+        public void FindSafetyRegionType () {
             GvrSafetyRegionType safetyType = GvrSafetyRegionType.None;
-            bool success = GvrHeadset.TryGetSafetyRegionType(ref safetyType);
-            if (enableDebugLog)
-            {
-                Debug.Log("Safety region type success " + success + "; value " + safetyType);
+            bool success = GvrHeadset.TryGetSafetyRegionType (ref safetyType);
+            if (enableDebugLog) {
+                Debug.Log ("Safety region type success " + success + "; value " + safetyType);
             }
         }
 
         /// <summary>Prints the safety region's inner radius to console.</summary>
-        public void FindSafetyInnerRadius()
-        {
+        public void FindSafetyInnerRadius () {
             float innerRadius = -1.0f;
-            bool success = GvrHeadset.TryGetSafetyCylinderInnerRadius(ref innerRadius);
-            if (enableDebugLog)
-            {
-                Debug.Log("Safety region inner radius success " + success + "; value "
-                          + innerRadius);
+            bool success = GvrHeadset.TryGetSafetyCylinderInnerRadius (ref innerRadius);
+            if (enableDebugLog) {
+                Debug.Log ("Safety region inner radius success " + success + "; value " +
+                    innerRadius);
             }
 
             // Don't activate the safety cylinder visual until the radius is a reasonable value.
-            if (innerRadius > 0.1f && safetyRing != null)
-            {
-                safetyRing.SetActive(true);
-                safetyRing.transform.localScale = new Vector3(innerRadius, 1, innerRadius);
+            if (innerRadius > 0.1f && safetyRing != null) {
+                safetyRing.SetActive (true);
+                safetyRing.transform.localScale = new Vector3 (innerRadius, 1, innerRadius);
             }
         }
 
         /// <summary>Prints the safety region's outer radius to console.</summary>
-        public void FindSafetyOuterRadius()
-        {
+        public void FindSafetyOuterRadius () {
             float outerRadius = -1.0f;
-            bool success = GvrHeadset.TryGetSafetyCylinderOuterRadius(ref outerRadius);
-            if (enableDebugLog)
-            {
-                Debug.Log("Safety region outer radius success " + success + "; value " +
-                          outerRadius);
+            bool success = GvrHeadset.TryGetSafetyCylinderOuterRadius (ref outerRadius);
+            if (enableDebugLog) {
+                Debug.Log ("Safety region outer radius success " + success + "; value " +
+                    outerRadius);
             }
         }
 
-        private void OnEnable()
-        {
-            if (safetyRing != null)
-            {
-                safetyRing.SetActive(false);
+        private void OnEnable () {
+            if (safetyRing != null) {
+                safetyRing.SetActive (false);
             }
 
-            if (!GvrHeadset.SupportsPositionalTracking)
-            {
+            if (!GvrHeadset.SupportsPositionalTracking) {
                 return;
             }
 
             GvrHeadset.OnSafetyRegionChange += OnSafetyRegionEvent;
             GvrHeadset.OnRecenter += OnRecenterEvent;
-            if (enableDebugLog)
-            {
-                StartCoroutine(StatusUpdateLoop());
+            if (enableDebugLog) {
+                StartCoroutine (StatusUpdateLoop ());
             }
         }
 
-        private void OnDisable()
-        {
-            if (!GvrHeadset.SupportsPositionalTracking)
-            {
+        private void OnDisable () {
+            if (!GvrHeadset.SupportsPositionalTracking) {
                 return;
             }
 
@@ -162,25 +139,21 @@ namespace GoogleVR.HelloVR
             GvrHeadset.OnRecenter -= OnRecenterEvent;
         }
 
-        private void Start()
-        {
-            if (enableDebugLog)
-            {
-                Debug.Log("Device supports positional tracking: "
-                          + GvrHeadset.SupportsPositionalTracking);
+        private void Start () {
+            if (enableDebugLog) {
+                Debug.Log ("Device supports positional tracking: " +
+                    GvrHeadset.SupportsPositionalTracking);
             }
         }
 
-        private IEnumerator StatusUpdateLoop()
-        {
-            while (true)
-            {
+        private IEnumerator StatusUpdateLoop () {
+            while (true) {
                 yield return waitFourSeconds;
-                FindFloorHeight();
-                FindRecenterTransform();
-                FindSafetyOuterRadius();
-                FindSafetyInnerRadius();
-                FindSafetyRegionType();
+                FindFloorHeight ();
+                FindRecenterTransform ();
+                FindSafetyOuterRadius ();
+                FindSafetyInnerRadius ();
+                FindSafetyRegionType ();
             }
         }
     }
