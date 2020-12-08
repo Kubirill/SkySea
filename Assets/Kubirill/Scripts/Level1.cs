@@ -8,9 +8,9 @@ public class Level1 : MonoBehaviour
     public buttonLevel1[] buttoms;
     public int[] correctNum;
     int step=0;
-    public Transform lattice;
-    public Transform targetLattice;
-    public float speedLattice =0.5f;
+    public DoTweenActivate[] MovingObjects;
+    //public Transform targetLattice;
+    //public float speedLattice =0.5f;
     void Start()
     {
         foreach (buttonLevel1 buttom in buttoms)
@@ -31,7 +31,10 @@ public class Level1 : MonoBehaviour
             }
             else
             {
-                lattice.DOMove(targetLattice.position,speedLattice);
+                foreach (DoTweenActivate obj in MovingObjects)
+                {
+                    obj.GoToEnd();
+                }
             }
 
         }
@@ -40,7 +43,7 @@ public class Level1 : MonoBehaviour
             step = 0;
             foreach (buttonLevel1 buttom in buttoms)
             {
-                buttom.SetMaterial("unactive");
+                buttom.SetMaterial("wrong");
             }
         }
     }
