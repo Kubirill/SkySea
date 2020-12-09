@@ -10,31 +10,54 @@ public class Go : MonoBehaviour {
     bool afterGo = false;
 
     [SerializeField] AudioClip buttonSound;
+    Animator anim;
     AudioSource _audioSource;
-    private void Start () => _audioSource = this.gameObject.GetComponent<AudioSource> ();
+    private void Start()
+    {
+        _audioSource = this.gameObject.GetComponent<AudioSource>();
+        anim = GetComponentInParent<Animator>();
+    }
 
     /*public void OnTriggerStay () => move ();*/
     public void OnTriggerStay(Collider other)
     {
-
-        if ((other.tag == "Dragon") && other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish")) move();
-    }
-    // smooth for start
-    private void OnTriggerEnter (Collider other) {
+        if (other.tag == "Dragon")
+        {
+            if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
+            {
+                if (!anim.GetBool("Press"))
+                {
+                   //smooth for start
+                    DOTween.To(() => speed, x => speed = x, maxspeed, 1);
+                    anim.SetBool("Press", true);
+                    _audioSource.Play();
+                }
+                move();
+            }
+            else
+            {
+                if (anim.GetBool("Press"))
+                {
+                    DOTween.To(() => speed, x => speed = x, 0, 1);
+                    afterGo = true;
+                    _audioSource.Play();
+                    StartCoroutine(AfterMove());
+                    anim.SetBool("Press", false);
+                }
+            }
+        }
         
-            _audioSource.Play();
-            DOTween.To(() => speed, x => speed = x, maxspeed, 1);
-        
-            
     }
+    
     // smooth for end
     private void OnTriggerExit (Collider other) {
-        if ((other.tag == "Dragon") && other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
+        if ((other.tag == "Dragon") &&( anim.GetBool("Press")))
         {
             DOTween.To(() => speed, x => speed = x, 0, 1);
             afterGo = true;
             _audioSource.Play();
             StartCoroutine(AfterMove());
+            anim.SetBool("Press", false);
         }
             
     }

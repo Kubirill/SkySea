@@ -55,8 +55,10 @@ public class DragonMove : MonoBehaviour
                     //transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), 0.1f);
                     rb.useGravity = true;
                     rb.velocity = Vector3.zero;
+                    transform.DOComplete();
                     //transform.transform.localPosition= new Vector3(target.transform.localPosition.x, transform.localPosition.y, target.transform.localPosition.z);
                     transform.transform.DOPause();
+                    
                 }
                 anim.SetBool("Finish", true);
                 rb.DOPause();
