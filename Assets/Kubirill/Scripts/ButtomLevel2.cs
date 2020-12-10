@@ -14,6 +14,11 @@ public class ButtomLevel2 : MonoBehaviour
     public float speed;
     bool stay=false;
     bool isOpen = false;
+    Animator anim;
+    public void Start()
+    {
+        anim = GetComponentInParent<Animator>();
+    }
     public void OnTriggerStay(Collider other)
     {
         if ((other.tag == "Dragon") || (other.tag == "barrel"))
@@ -32,12 +37,14 @@ public class ButtomLevel2 : MonoBehaviour
     {
         if ((!stay)&&(isOpen))
         {
+            anim.SetBool("Press", false);
             isOpen = false;
             leftGoal.DORotateQuaternion(leftClose.rotation, speed);
             rightGoal.DORotateQuaternion(rightClose.rotation, speed);
         }
         if ((stay) && (!isOpen))
         {
+            anim.SetBool("Press", true);
             isOpen = true;
             leftGoal.DORotateQuaternion(leftOpen.rotation, speed);
             rightGoal.DORotateQuaternion(rightOpen.rotation, speed);

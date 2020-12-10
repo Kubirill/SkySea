@@ -46,8 +46,8 @@ public class DragonMove : MonoBehaviour
         }
         if (target.activeInHierarchy)
         {
-            if (((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 0.5f))||(addTarget==Vector3.zero)) anim.SetBool("Finish", false);
-            else
+            if (((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 0.6f))|| (Vector3.Distance(targetLazer.transform.up, Vector3.up) > 0.1)) anim.SetBool("Finish", false);
+            else if ((Vector3.Distance(target.transform.position - new Vector3(0, target.transform.position.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) < 0.3f))
             {
 
                 if (!anim.GetBool("Finish"))
@@ -55,7 +55,7 @@ public class DragonMove : MonoBehaviour
                     //transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), 0.1f);
                     rb.useGravity = true;
                     rb.velocity = Vector3.zero;
-                    transform.DOComplete();
+                    
                     //transform.transform.localPosition= new Vector3(target.transform.localPosition.x, transform.localPosition.y, target.transform.localPosition.z);
                     transform.transform.DOPause();
                     
@@ -77,15 +77,21 @@ public class DragonMove : MonoBehaviour
         }
         if (!anim.GetBool("Finish"))
         {
-            addTarget = Vector3.zero;
-            if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 0.5f, 0);
+            //addTarget = Vector3.zero;
+            addTarget = targetLazer.transform.up.normalized/2;
+            //if (Vector3.Distance(targetLazer.transform.up, Vector3.up) < 0.1) addTarget = new Vector3(0, 0.5f, 0);
 
 
             rb.useGravity = false;
             transform.DOLookAt(target.transform.position + addTarget, duration / 5);
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
-                transform.DOLocalMove( transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position)  + addTarget, duration - (isFood ? 1 : 0));
+                if ((transform.position.y >= transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y) || (Vector3.Distance(transform.position, target.transform.position) < 10))
+                {
+                    transform.DOLocalMove(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position) + addTarget / 2, duration - (isFood ? 1 : 0));
+
+                }
+                else transform.DOLocalMoveY(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y + addTarget.y / 2+1, (duration - (isFood ? 1 : 0))/2);
             }
         }
 

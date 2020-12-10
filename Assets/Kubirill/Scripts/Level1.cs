@@ -24,6 +24,7 @@ public class Level1 : MonoBehaviour
         if (correctNum[step]==num)
         {
             buttoms[num].SetMaterial("correct");
+            Debug.Log("Sendcorrect");
             if (step < correctNum.Length-1)
             {
                 step++;
@@ -33,7 +34,7 @@ public class Level1 : MonoBehaviour
             {
                 foreach (DoTweenActivate obj in MovingObjects)
                 {
-                    obj.GoToEnd();
+                   if (obj!=null) obj.GoToEnd();
                 }
             }
 
@@ -43,13 +44,22 @@ public class Level1 : MonoBehaviour
             step = 0;
             foreach (buttonLevel1 buttom in buttoms)
             {
+
                 buttom.SetMaterial("wrong");
             }
         }
     }
     // Update is called once per frame
-    void Update()
+    public void Releese()
     {
-        
+        if (step == 0)
+        {
+            foreach (buttonLevel1 buttom in buttoms)
+            {
+
+                buttom.SetMaterial("unactive");
+            }
+        }
+
     }
 }
