@@ -16,7 +16,11 @@ public class DoTweenActivate : MonoBehaviour
     {
         if (isDestoyed)
         {
-            if (transform.localScale.x <= (targetEnd.localScale.x * 1.1f)) Destroy(gameObject);
+            if (transform.localScale.x <= (targetEnd.localScale.x * 1.1f))
+            {
+                transform.DOComplete();
+                Destroy(gameObject);
+            }
         }
     }
     public void GoToEnd()

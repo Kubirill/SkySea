@@ -83,7 +83,7 @@ public class DragonMove : MonoBehaviour
 
 
             rb.useGravity = false;
-            transform.DOLookAt(target.transform.position + addTarget, duration / 5);
+            transform.DOLookAt(target.transform.position, duration / 5);
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
             {
                 if ((transform.position.y >= transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y) || (Vector3.Distance(transform.position, target.transform.position) < 10))
