@@ -26,7 +26,8 @@ public class GhostFreeRoamCamera : MonoBehaviour
     {
         if (cursorToggleAllowed)
         {
-            Screen.lockCursor = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            //Screen.lockCursor = true; устарело
             Cursor.visible = false;
         }
     }
@@ -73,7 +74,8 @@ public class GhostFreeRoamCamera : MonoBehaviour
                 if (!togglePressed)
                 {
                     togglePressed = true;
-                    Screen.lockCursor = !Screen.lockCursor;
+                    if (Cursor.lockState == CursorLockMode.Locked) Cursor.lockState = CursorLockMode.None;
+                    else Cursor.lockState = CursorLockMode.Locked; 
                     Cursor.visible = !Cursor.visible;
                 }
             }
