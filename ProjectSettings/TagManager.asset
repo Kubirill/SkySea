@@ -11,6 +11,7 @@ TagManager:
   - barrel
   - SafeZone
   - StopForCats
+  - PlotForCats
   layers:
   - Default
   - TransparentFX

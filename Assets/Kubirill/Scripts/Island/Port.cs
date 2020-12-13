@@ -11,7 +11,7 @@ public class Port : MonoBehaviour
     public GameObject catsObject;
     public void OnTriggerEnter(Collider other)
     {
-        if ((other.tag == "Player")&&(catsObject.transform.childCount != 0))
+        if ((other.tag == "PlotForCats") &&(catsObject.transform.childCount != 0))
         {
             ship.transform.DOMove(transform.parent.position, 4);
             ship.transform.DORotateQuaternion(transform.parent.rotation, 4);
