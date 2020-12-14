@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DuplicatesReport ToolsVersion="202.0.20200928.101108">
+  <Statistics>
+    <CodebaseCost>270457</CodebaseCost>
+    <TotalDuplicatesCost>10233</TotalDuplicatesCost>
+    <TotalFragmentsCost>21111</TotalFragmentsCost>
+  </Statistics>
+  <Duplicates>
+    <Duplicate Cost="1068">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs</FileName>
+        <OffsetRange Start="4588" End="7142"></OffsetRange>
+        <LineRange Start="166" End="241"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs</FileName>
+        <OffsetRange Start="2563" End="5117"></OffsetRange>
+        <LineRange Start="76" End="151"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="589">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs</FileName>
+        <OffsetRange Start="4899" End="6598"></OffsetRange>
+        <LineRange Start="124" End="147"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs</FileName>
+        <OffsetRange Start="4070" End="5769"></OffsetRange>
+        <LineRange Start="110" End="133"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="385">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs</FileName>
+        <OffsetRange Start="12651" End="13721"></OffsetRange>
+        <LineRange Start="296" End="311"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs</FileName>
+        <OffsetRange Start="14083" End="15153"></OffsetRange>
+        <LineRange Start="319" End="334"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="320">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs</FileName>
+        <OffsetRange Start="5438" End="6408"></OffsetRange>
+        <LineRange Start="136" End="145"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs</FileName>
+        <OffsetRange Start="7316" End="8286"></OffsetRange>
+        <LineRange Start="160" End="169"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="256">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs</FileName>
+        <OffsetRange Start="3004" End="4119"></OffsetRange>
+        <LineRange Start="92" End="110"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs</FileName>
+        <OffsetRange Start="2832" End="3947"></OffsetRange>
+        <LineRange Start="89" End="107"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="246">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="45025" End="46012"></OffsetRange>
+        <LineRange Start="1119" End="1146"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="59707" End="60694"></OffsetRange>
+        <LineRange Start="1521" End="1548"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="236">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs</FileName>
+        <OffsetRange Start="5865" End="6605"></OffsetRange>
+        <LineRange Start="148" End="156"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs</FileName>
+        <OffsetRange Start="5704" End="6444"></OffsetRange>
+        <LineRange Start="142" End="150"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="222">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs</FileName>
+        <OffsetRange Start="4557" End="5427"></OffsetRange>
+        <LineRange Start="130" End="141"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs</FileName>
+        <OffsetRange Start="4042" End="4912"></OffsetRange>
+        <LineRange Start="116" End="127"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="221">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs</FileName>
+        <OffsetRange Start="2309" End="3428"></OffsetRange>
+        <LineRange Start="70" End="101"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs</FileName>
+        <OffsetRange Start="1808" End="2757"></OffsetRange>
+        <LineRange Start="59" End="87"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="220">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs</FileName>
+        <OffsetRange Start="14333" End="14911"></OffsetRange>
+        <LineRange Start="322" End="325"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs</FileName>
+        <OffsetRange Start="12988" End="13558"></OffsetRange>
+        <LineRange Start="282" End="285"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="208">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs</FileName>
+        <OffsetRange Start="1856" End="2739"></OffsetRange>
+        <LineRange Start="70" End="93"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs</FileName>
+        <OffsetRange Start="1803" End="2686"></OffsetRange>
+        <LineRange Start="69" End="92"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="206">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="297" End="863"></OffsetRange>
+        <LineRange Start="11" End="23"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="3600" End="4166"></OffsetRange>
+        <LineRange Start="74" End="86"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="201">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="36741" End="37455"></OffsetRange>
+        <LineRange Start="919" End="940"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="51303" End="52017"></OffsetRange>
+        <LineRange Start="1321" End="1342"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="196">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="37948" End="38376"></OffsetRange>
+        <LineRange Start="954" End="959"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="52518" End="52946"></OffsetRange>
+        <LineRange Start="1356" End="1361"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="184">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs</FileName>
+        <OffsetRange Start="5038" End="5742"></OffsetRange>
+        <LineRange Start="134" End="146"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs</FileName>
+        <OffsetRange Start="7333" End="8039"></OffsetRange>
+        <LineRange Start="189" End="203"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="180">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs</FileName>
+        <OffsetRange Start="3182" End="3972"></OffsetRange>
+        <LineRange Start="99" End="120"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs</FileName>
+        <OffsetRange Start="3546" End="4351"></OffsetRange>
+        <LineRange Start="102" End="124"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="177">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs</FileName>
+        <OffsetRange Start="9798" End="10527"></OffsetRange>
+        <LineRange Start="222" End="230"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs</FileName>
+        <OffsetRange Start="10899" End="11628"></OffsetRange>
+        <LineRange Start="241" End="249"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="155">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Objects\BezierPath.cs</FileName>
+        <OffsetRange Start="19598" End="19933"></OffsetRange>
+        <LineRange Start="415" End="421"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Objects\BezierPath.cs</FileName>
+        <OffsetRange Start="22608" End="22943"></OffsetRange>
+        <LineRange Start="501" End="507"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="152">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="36304" End="36668"></OffsetRange>
+        <LineRange Start="904" End="915"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="50866" End="51230"></OffsetRange>
+        <LineRange Start="1306" End="1317"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="151">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs</FileName>
+        <OffsetRange Start="6243" End="6715"></OffsetRange>
+        <LineRange Start="155" End="164"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Demos\Scripts\HelloVR\ObjectController.cs</FileName>
+        <OffsetRange Start="3695" End="4155"></OffsetRange>
+        <LineRange Start="95" End="104"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="141">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs</FileName>
+        <OffsetRange Start="5553" End="6106"></OffsetRange>
+        <LineRange Start="118" End="125"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs</FileName>
+        <OffsetRange Start="7066" End="7619"></OffsetRange>
+        <LineRange Start="140" End="147"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="141">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs</FileName>
+        <OffsetRange Start="5437" End="5994"></OffsetRange>
+        <LineRange Start="117" End="124"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs</FileName>
+        <OffsetRange Start="7282" End="7839"></OffsetRange>
+        <LineRange Start="143" End="150"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="130">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs</FileName>
+        <OffsetRange Start="8234" End="8575"></OffsetRange>
+        <LineRange Start="212" End="215"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs</FileName>
+        <OffsetRange Start="12701" End="13042"></OffsetRange>
+        <LineRange Start="283" End="286"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="130">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="1060" End="1426"></OffsetRange>
+        <LineRange Start="28" End="31"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="4363" End="4729"></OffsetRange>
+        <LineRange Start="91" End="94"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="126">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="37505" End="37826"></OffsetRange>
+        <LineRange Start="943" End="950"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="52067" End="52388"></OffsetRange>
+        <LineRange Start="1345" End="1352"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="125">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs</FileName>
+        <OffsetRange Start="606" End="1003"></OffsetRange>
+        <LineRange Start="25" End="39"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs</FileName>
+        <OffsetRange Start="519" End="907"></OffsetRange>
+        <LineRange Start="23" End="37"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="122">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="2597" End="3122"></OffsetRange>
+        <LineRange Start="51" End="60"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="5606" End="6129"></OffsetRange>
+        <LineRange Start="114" End="122"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="121">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs</FileName>
+        <OffsetRange Start="2417" End="2707"></OffsetRange>
+        <LineRange Start="84" End="89"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs</FileName>
+        <OffsetRange Start="2269" End="2556"></OffsetRange>
+        <LineRange Start="80" End="85"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="120">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="38399" End="38685"></OffsetRange>
+        <LineRange Start="962" End="967"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="52969" End="53255"></OffsetRange>
+        <LineRange Start="1364" End="1369"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="120">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs</FileName>
+        <OffsetRange Start="32445" End="32952"></OffsetRange>
+        <LineRange Start="1002" End="1019"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs</FileName>
+        <OffsetRange Start="33309" End="33816"></OffsetRange>
+        <LineRange Start="1031" End="1048"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="114">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs</FileName>
+        <OffsetRange Start="6510" End="6810"></OffsetRange>
+        <LineRange Start="150" End="156"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs</FileName>
+        <OffsetRange Start="8388" End="8688"></OffsetRange>
+        <LineRange Start="174" End="180"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="110">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs</FileName>
+        <OffsetRange Start="1792" End="2150"></OffsetRange>
+        <LineRange Start="51" End="63"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs</FileName>
+        <OffsetRange Start="5765" End="6123"></OffsetRange>
+        <LineRange Start="166" End="178"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="108">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs</FileName>
+        <OffsetRange Start="2124" End="2506"></OffsetRange>
+        <LineRange Start="58" End="64"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs</FileName>
+        <OffsetRange Start="2337" End="2719"></OffsetRange>
+        <LineRange Start="60" End="66"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="107">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs</FileName>
+        <OffsetRange Start="8124" End="8747"></OffsetRange>
+        <LineRange Start="179" End="188"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs</FileName>
+        <OffsetRange Start="9801" End="10344"></OffsetRange>
+        <LineRange Start="215" End="223"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="106">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Editor\PathEditor.cs</FileName>
+        <OffsetRange Start="15905" End="16158"></OffsetRange>
+        <LineRange Start="318" End="321"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Editor\PathEditor.cs</FileName>
+        <OffsetRange Start="22347" End="22600"></OffsetRange>
+        <LineRange Start="437" End="440"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="105">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="43730" End="44093"></OffsetRange>
+        <LineRange Start="1085" End="1098"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="58404" End="58767"></OffsetRange>
+        <LineRange Start="1487" End="1500"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="103">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs</FileName>
+        <OffsetRange Start="182" End="355"></OffsetRange>
+        <LineRange Start="13" End="13"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs</FileName>
+        <OffsetRange Start="182" End="355"></OffsetRange>
+        <LineRange Start="13" End="13"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="103">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs</FileName>
+        <OffsetRange Start="3596" End="4228"></OffsetRange>
+        <LineRange Start="110" End="120"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs</FileName>
+        <OffsetRange Start="3522" End="4154"></OffsetRange>
+        <LineRange Start="109" End="119"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="100">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs</FileName>
+        <OffsetRange Start="1943" End="2323"></OffsetRange>
+        <LineRange Start="57" End="65"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs</FileName>
+        <OffsetRange Start="2348" End="2728"></OffsetRange>
+        <LineRange Start="65" End="73"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="99">
+      <Fragment>
+        <FileName>Assets\Scripts\firsttask.cs</FileName>
+        <OffsetRange Start="659" End="818"></OffsetRange>
+        <LineRange Start="27" End="29"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\Scripts\SecondTask\SecondTask.cs</FileName>
+        <OffsetRange Start="1362" End="1521"></OffsetRange>
+        <LineRange Start="46" End="48"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="99">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs</FileName>
+        <OffsetRange Start="2890" End="3204"></OffsetRange>
+        <LineRange Start="99" End="103"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs</FileName>
+        <OffsetRange Start="2837" End="3151"></OffsetRange>
+        <LineRange Start="98" End="102"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="98">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs</FileName>
+        <OffsetRange Start="2182" End="2491"></OffsetRange>
+        <LineRange Start="66" End="71"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs</FileName>
+        <OffsetRange Start="2699" End="3008"></OffsetRange>
+        <LineRange Start="78" End="83"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="96">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs</FileName>
+        <OffsetRange Start="2231" End="2905"></OffsetRange>
+        <LineRange Start="74" End="86"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs</FileName>
+        <OffsetRange Start="2059" End="2733"></OffsetRange>
+        <LineRange Start="71" End="83"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="94">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs</FileName>
+        <OffsetRange Start="11787" End="11988"></OffsetRange>
+        <LineRange Start="268" End="269"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs</FileName>
+        <OffsetRange Start="16841" End="17046"></OffsetRange>
+        <LineRange Start="359" End="360"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="94">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Editor\Helper\ScreenSpacePolyLine.cs</FileName>
+        <OffsetRange Start="3414" End="3837"></OffsetRange>
+        <LineRange Start="76" End="79"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="2034" End="2457"></OffsetRange>
+        <LineRange Start="44" End="47"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="94">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs</FileName>
+        <OffsetRange Start="1545" End="1938"></OffsetRange>
+        <LineRange Start="37" End="43"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Editor\Controller\GvrControllerVisualEditor.cs</FileName>
+        <OffsetRange Start="2756" End="3129"></OffsetRange>
+        <LineRange Start="60" End="66"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Editor\Controller\GvrLaserPointerEditor.cs</FileName>
+        <OffsetRange Start="2726" End="3099"></OffsetRange>
+        <LineRange Start="60" End="66"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Editor\Controller\GvrLaserVisualEditor.cs</FileName>
+        <OffsetRange Start="3642" End="4015"></OffsetRange>
+        <LineRange Start="82" End="88"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="93">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs</FileName>
+        <OffsetRange Start="8756" End="9087"></OffsetRange>
+        <LineRange Start="221" End="223"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs</FileName>
+        <OffsetRange Start="13415" End="13746"></OffsetRange>
+        <LineRange Start="296" End="298"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="93">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs</FileName>
+        <OffsetRange Start="4342" End="4720"></OffsetRange>
+        <LineRange Start="119" End="127"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs</FileName>
+        <OffsetRange Start="6633" End="7011"></OffsetRange>
+        <LineRange Start="174" End="182"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="93">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs</FileName>
+        <OffsetRange Start="1931" End="2044"></OffsetRange>
+        <LineRange Start="53" End="53"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs</FileName>
+        <OffsetRange Start="5761" End="5874"></OffsetRange>
+        <LineRange Start="125" End="125"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="88">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs</FileName>
+        <OffsetRange Start="3321" End="3629"></OffsetRange>
+        <LineRange Start="79" End="83"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs</FileName>
+        <OffsetRange Start="3610" End="3918"></OffsetRange>
+        <LineRange Start="87" End="91"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="84">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs</FileName>
+        <OffsetRange Start="14696" End="15005"></OffsetRange>
+        <LineRange Start="304" End="308"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs</FileName>
+        <OffsetRange Start="15640" End="15949"></OffsetRange>
+        <LineRange Start="320" End="324"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="83">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs</FileName>
+        <OffsetRange Start="1968" End="2068"></OffsetRange>
+        <LineRange Start="54" End="54"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs</FileName>
+        <OffsetRange Start="3027" End="3127"></OffsetRange>
+        <LineRange Start="74" End="74"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs</FileName>
+        <OffsetRange Start="1998" End="2098"></OffsetRange>
+        <LineRange Start="63" End="63"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="82">
+      <Fragment>
+        <FileName>Assets\Kubirill\Scripts\DragonMove.cs</FileName>
+        <OffsetRange Start="1383" End="1536"></OffsetRange>
+        <LineRange Start="49" End="49"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\Kubirill\Scripts\DragonMove.cs</FileName>
+        <OffsetRange Start="1667" End="1821"></OffsetRange>
+        <LineRange Start="50" End="50"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="81">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="1536" End="1844"></OffsetRange>
+        <LineRange Start="35" End="40"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\VertexPathUtility.cs</FileName>
+        <OffsetRange Start="4839" End="5147"></OffsetRange>
+        <LineRange Start="98" End="103"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="81">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs</FileName>
+        <OffsetRange Start="485" End="632"></OffsetRange>
+        <LineRange Start="27" End="28"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs</FileName>
+        <OffsetRange Start="1536" End="1683"></OffsetRange>
+        <LineRange Start="50" End="51"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="81">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs</FileName>
+        <OffsetRange Start="638" End="799"></OffsetRange>
+        <LineRange Start="32" End="33"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs</FileName>
+        <OffsetRange Start="1889" End="2050"></OffsetRange>
+        <LineRange Start="57" End="58"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="79">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs</FileName>
+        <OffsetRange Start="1194" End="1614"></OffsetRange>
+        <LineRange Start="48" End="58"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs</FileName>
+        <OffsetRange Start="1149" End="1569"></OffsetRange>
+        <LineRange Start="47" End="57"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="78">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs</FileName>
+        <OffsetRange Start="1681" End="1926"></OffsetRange>
+        <LineRange Start="54" End="58"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs</FileName>
+        <OffsetRange Start="3369" End="3630"></OffsetRange>
+        <LineRange Start="98" End="102"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="77">
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\MathUtility.cs</FileName>
+        <OffsetRange Start="302" End="463"></OffsetRange>
+        <LineRange Start="9" End="12"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\PathCreator\Core\Runtime\Utility\MathUtility.cs</FileName>
+        <OffsetRange Start="496" End="657"></OffsetRange>
+        <LineRange Start="12" End="15"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="76">
+      <Fragment>
+        <FileName>Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs</FileName>
+        <OffsetRange Start="1870" End="2013"></OffsetRange>
+        <LineRange Start="39" End="39"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs</FileName>
+        <OffsetRange Start="2715" End="2858"></OffsetRange>
+        <LineRange Start="50" End="50"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs</FileName>
+        <OffsetRange Start="3560" End="3703"></OffsetRange>
+        <LineRange Start="61" End="61"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="76">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs</FileName>
+        <OffsetRange Start="2165" End="2364"></OffsetRange>
+        <LineRange Start="57" End="60"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs</FileName>
+        <OffsetRange Start="6112" End="6323"></OffsetRange>
+        <LineRange Start="130" End="133"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs</FileName>
+        <OffsetRange Start="6358" End="6557"></OffsetRange>
+        <LineRange Start="145" End="148"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs</FileName>
+        <OffsetRange Start="8856" End="9067"></OffsetRange>
+        <LineRange Start="192" End="195"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs</FileName>
+        <OffsetRange Start="10450" End="10661"></OffsetRange>
+        <LineRange Start="227" End="230"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="75">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs</FileName>
+        <OffsetRange Start="1031" End="1315"></OffsetRange>
+        <LineRange Start="37" End="39"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs</FileName>
+        <OffsetRange Start="1109" End="1393"></OffsetRange>
+        <LineRange Start="37" End="39"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="74">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs</FileName>
+        <OffsetRange Start="3248" End="3401"></OffsetRange>
+        <LineRange Start="92" End="92"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs</FileName>
+        <OffsetRange Start="3506" End="3659"></OffsetRange>
+        <LineRange Start="94" End="94"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="74">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs</FileName>
+        <OffsetRange Start="3266" End="3878"></OffsetRange>
+        <LineRange Start="81" End="90"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs</FileName>
+        <OffsetRange Start="11548" End="12065"></OffsetRange>
+        <LineRange Start="254" End="261"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="72">
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs</FileName>
+        <OffsetRange Start="1731" End="2033"></OffsetRange>
+        <LineRange Start="53" End="56"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs</FileName>
+        <OffsetRange Start="1798" End="2100"></OffsetRange>
+        <LineRange Start="53" End="56"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="72">
+      <Fragment>
+        <FileName>Assets\Scripts\4 task\task.cs</FileName>
+        <OffsetRange Start="2971" End="3077"></OffsetRange>
+        <LineRange Start="84" End="85"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\Scripts\ThirdTasks\ButtonTask.cs</FileName>
+        <OffsetRange Start="720" End="826"></OffsetRange>
+        <LineRange Start="25" End="26"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="71">
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs</FileName>
+        <OffsetRange Start="1534" End="1757"></OffsetRange>
+        <LineRange Start="58" End="65"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs</FileName>
+        <OffsetRange Start="1481" End="1704"></OffsetRange>
+        <LineRange Start="57" End="64"></LineRange>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="71">
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="21296" End="21522"></OffsetRange>
+        <LineRange Start="524" End="530"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="66435" End="66661"></OffsetRange>
+        <LineRange Start="1728" End="1734"></LineRange>
+      </Fragment>
+      <Fragment>
+        <FileName>Assets\GoogleVR\Scripts\Controller\Internal\Emulator\Generated\PhoneEvent.cs</FileName>
+        <OffsetRange Start="82567" End="82793"></OffsetRange>
+        <LineRange Start="2164" End="2170"></LineRange>
+      </Fragment>
+    </Duplicate>
+  </Duplicates>
+</DuplicatesReport>
