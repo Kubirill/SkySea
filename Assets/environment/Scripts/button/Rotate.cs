@@ -36,6 +36,7 @@ public class Rotate : MonoBehaviour
 			(angle * (left ? -1 : 1)), 0), smooth);*/
     public void OnTriggerStay(Collider other)
     {
+        DragonRigidbody.isKinematic = true;
         if (other.tag == "Dragon")
         {
 
@@ -43,7 +44,7 @@ public class Rotate : MonoBehaviour
             {
                 if (!anim.GetBool("Press"))
                 {
-                    DragonRigidbody.isKinematic = true;
+
                     anim.SetBool("Press", true);
                     _audioSource.Play();
                 }
@@ -61,7 +62,7 @@ public class Rotate : MonoBehaviour
     }
     IEnumerator MakeDragonKinematic()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         DragonRigidbody.isKinematic = anim.GetBool("Press");
 
     }

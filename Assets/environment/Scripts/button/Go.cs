@@ -30,10 +30,8 @@ public class Go : MonoBehaviour
         anim = GetComponentInParent<Animator>();
     }
 
-    /*public void OnTriggerStay () => move ();*/
     public void OnTriggerStay(Collider other)
     {
-
         if (other.tag == "Dragon")
         {
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
@@ -69,6 +67,7 @@ public class Go : MonoBehaviour
             anim.SetBool("Press", false);
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Dragon")
@@ -79,14 +78,14 @@ public class Go : MonoBehaviour
     }
     IEnumerator AfterMove()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         afterGo = false;
+        dragonRigidbody.isKinematic = anim.GetBool("Press"); ;
     }
     private void FixedUpdate()
     {
         if (speed == 0)
         {
-            dragonRigidbody.isKinematic = anim.GetBool("Press"); ;
             heroRigidbody.isKinematic = true;
             heroRigidbody.isKinematic = false;
         }
