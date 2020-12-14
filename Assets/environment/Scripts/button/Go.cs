@@ -87,6 +87,7 @@ public class Go : MonoBehaviour
         if (speed == 0 && dragonRigidbody.isKinematic)
         {
             dragonRigidbody.isKinematic = false;
+
         }
         if (afterGo)
             move();
@@ -99,7 +100,10 @@ public class Go : MonoBehaviour
         var powerOfMove = heroTransform.forward * speed; // set direction of movement (forward)
         // without physics
         // heroTransform.Translate (powerOfMove * Time.deltaTime, Space.World);
-        heroRigidbody.DOMove(heroTransform.position + powerOfMove, 1);
+        heroRigidbody.velocity = powerOfMove;
+        dragonRigidbody.drag = 1 - speed;
+        print($"105. Go -> dragonRigidbody.drag : {dragonRigidbody.drag}");
+
     }
 }
 
