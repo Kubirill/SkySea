@@ -78,7 +78,7 @@ public class Go : MonoBehaviour
     }
     IEnumerator AfterMove()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         afterGo = false;
         dragonRigidbody.isKinematic = anim.GetBool("Press"); ;
     }
@@ -86,6 +86,7 @@ public class Go : MonoBehaviour
     {
         if (speed == 0)
         {
+            
             heroRigidbody.isKinematic = true;
             heroRigidbody.isKinematic = false;
         }
