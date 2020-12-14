@@ -84,10 +84,11 @@ public class Go : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (speed == 0 && dragonRigidbody.isKinematic)
+        if (speed == 0)
         {
-            dragonRigidbody.isKinematic = false;
-
+            dragonRigidbody.isKinematic = anim.GetBool("Press"); ;
+            heroRigidbody.isKinematic = true;
+            heroRigidbody.isKinematic = false;
         }
         if (afterGo)
             move();
@@ -101,9 +102,6 @@ public class Go : MonoBehaviour
         // without physics
         // heroTransform.Translate (powerOfMove * Time.deltaTime, Space.World);
         heroRigidbody.velocity = powerOfMove;
-        dragonRigidbody.drag = 1 - speed;
-        print($"105. Go -> dragonRigidbody.drag : {dragonRigidbody.drag}");
-
     }
 }
 

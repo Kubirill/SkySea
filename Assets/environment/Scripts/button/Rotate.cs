@@ -1,3 +1,4 @@
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 public class Rotate : MonoBehaviour
@@ -5,6 +6,7 @@ public class Rotate : MonoBehaviour
 
     [SerializeField] Transform plot;
     [SerializeField] Rigidbody plotRb;
+    [SerializeField] Rigidbody DragonRigidbody;
 
     [SerializeField] bool left;
     [SerializeField] float smooth = 0.3f;
@@ -26,6 +28,7 @@ public class Rotate : MonoBehaviour
             _audioSource.Play();
             anim.SetBool("Press", false);
         }
+        DragonRigidbody.isKinematic = false;
     }
 
     /*private void OnTriggerStay () =>
@@ -35,10 +38,12 @@ public class Rotate : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
+
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
             {
                 if (!anim.GetBool("Press"))
                 {
+                    DragonRigidbody.isKinematic = true;
                     anim.SetBool("Press", true);
                     _audioSource.Play();
                 }
@@ -53,6 +58,12 @@ public class Rotate : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator MakeDragonKinematic()
+    {
+        yield return new WaitForSeconds(1f);
+        DragonRigidbody.isKinematic = anim.GetBool("Press");
+
     }
     void Rotation()
     {
