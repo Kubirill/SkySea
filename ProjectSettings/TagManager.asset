@@ -12,6 +12,8 @@ TagManager:
   - SafeZone
   - StopForCats
   - PlotForCats
+  - FinishZone
+  - TargetFinish
   layers:
   - Default
   - TransparentFX
