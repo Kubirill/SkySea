@@ -15,16 +15,20 @@ public class Port : MonoBehaviour
         {
             ship.transform.DOMove(transform.parent.position, 4);
             ship.transform.DORotateQuaternion(transform.parent.rotation, 4);
-            foreach (Collider button in buttons) button.enabled = false;
+            foreach (Collider button in buttons)
+            {
+                button.enabled = false;
+                button.GetComponentInParent<Animator>().SetBool("Press", false);
+            }
         }
     }
     public void Update()
     {
-        if (catsObject.transform.childCount == 0)
+        if (catsObject.transform.childCount <= 3)
         {
             foreach (Collider button in buttons) button.enabled = true;
             Dragon.SetTrigger("CatsSave");
-            GameObject.Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
