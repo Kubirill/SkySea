@@ -72,6 +72,7 @@ public class Go : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
+            
             SmoothEnd();
         }
 
