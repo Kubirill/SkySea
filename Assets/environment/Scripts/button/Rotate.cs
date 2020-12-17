@@ -45,10 +45,10 @@ public class Rotate : MonoBehaviour
 			(angle * (left ? -1 : 1)), 0), smooth);*/
     public void OnTriggerStay(Collider other)
     {
-        DragonRigidbody.isKinematic = true;
+        
         if (other.tag == "Dragon")
         {
-
+            DragonRigidbody.isKinematic = true;
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
             {
                 

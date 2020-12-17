@@ -15,6 +15,8 @@ public class Port : MonoBehaviour
         {
             ship.transform.DOMove(transform.parent.position, 4);
             ship.transform.DORotateQuaternion(transform.parent.rotation, 4);
+            ship.GetComponent<Rigidbody>().isKinematic = true;
+           
             foreach (Collider button in buttons)
             {
                 button.enabled = false;
@@ -22,13 +24,16 @@ public class Port : MonoBehaviour
             }
         }
     }
+    
     public void Update()
     {
         if (catsObject.transform.childCount <= 3)
         {
             foreach (Collider button in buttons) button.enabled = true;
             Dragon.SetTrigger("CatsSave");
+            ship.GetComponent<Rigidbody>().isKinematic = false;
             Destroy(gameObject);
         }
+
     }
 }

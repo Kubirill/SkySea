@@ -54,7 +54,7 @@ public class DragonMove : MonoBehaviour
         }
         if (target.activeInHierarchy)
         {
-            if (((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 0.6f))|| (Vector3.Distance(targetLazer.transform.up, Vector3.up) > 0.1)) anim.SetBool("Finish", false);
+            if (((Vector3.Distance(target.transform.position-new Vector3(0, target.transform.position.y, 0) , transform.position - new Vector3(0, transform.position.y, 0))  > 0.6f))|| ((Vector3.Distance(targetLazer.transform.up, Vector3.up) > 0.1)&&(!isFood))) anim.SetBool("Finish", false);
             else if ((Vector3.Distance(target.transform.position - new Vector3(0, target.transform.position.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) < 0.3f))
             {
 
@@ -96,10 +96,10 @@ public class DragonMove : MonoBehaviour
             {
                 if ((transform.position.y >= transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y) || (Vector3.Distance(transform.position, target.transform.position) < 10))
                 {
-                    transform.DOLocalMove(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position) + addTarget / 2, duration - (isFood ? 1 : 0));
+                    transform.DOLocalMove(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position) + addTarget / 2 * (isFood ? 0 : 1), duration - (isFood ? 1 : 0));
 
                 }
-                else transform.DOLocalMoveY(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y + addTarget.y / 2+1, (duration - (isFood ? 1 : 0))/2);
+                else transform.DOLocalMoveY(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y + addTarget.y / 2* (isFood ? 0 : 1) + 1, (duration - (isFood ? 1 : 0))/2);
             }
         }
 
@@ -107,8 +107,10 @@ public class DragonMove : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("tr");
         if (other.gameObject.tag == "food")
         {
+            Debug.Log("foodtr");
             target = other.gameObject;
             anim.SetTrigger("Food");
         }
@@ -118,7 +120,7 @@ public class DragonMove : MonoBehaviour
     {
         if (isFood)
         {
-            GameObject.Destroy(target);
+            Destroy(target);
             target = targetLazer;
             isFood = false;
         }

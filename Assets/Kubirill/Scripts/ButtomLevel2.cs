@@ -23,8 +23,12 @@ public class ButtomLevel2 : MonoBehaviour
     {
         if ((other.tag == "Dragon") || (other.tag == "barrel"))
         {
-            stay = true;
-            if (other.tag == "barrel") GameObject.FindGameObjectWithTag("Dragon").GetComponent<DragonMove>().anim.SetTrigger("CatsSave");
+            if (!stay)
+            {
+
+                stay = true;
+                if (other.tag == "barrel") GameObject.FindGameObjectWithTag("Dragon").GetComponent<DragonMove>().anim.SetTrigger("CatsSave");
+            }
         }
        
     }

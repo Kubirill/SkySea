@@ -85,6 +85,7 @@ public class Go : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        heroRigidbody.isKinematic = !dragonRigidbody.isKinematic;
         if (speed == 0)
         {
             

@@ -15,7 +15,9 @@ public class FinishZone : MonoBehaviour
         {
             ship.DOMove(targetZone.position, speed);
             ship.DORotateQuaternion(targetZone.rotation, speed);
+            
             foreach (Collider button in buttons) button.enabled = false;
+            ship.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }
