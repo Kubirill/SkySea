@@ -21,7 +21,7 @@ public class Lazer : MonoBehaviour {
         RaycastHit point;
         if (Physics.Raycast (transform.position, transform.TransformDirection (Vector3.forward * 2 - (useNormalLaser ? Vector3.zero : Vector3.up)), out point, MaxDistance, layerMask) && (point.collider.gameObject.layer == 8)) {
             if (Vector3.Distance (transform.position, point.transform.position) > 15) lazerPoint.GetComponent<MeshRenderer> ().enabled = true;
-            else lazerPoint.GetComponent<MeshRenderer> ().enabled = false;
+            //else lazerPoint.GetComponent<MeshRenderer> ().enabled = false;
             lazerPoint.SetActive (true);
             Debug.DrawRay (transform.position, transform.TransformDirection (Vector3.forward) * point.distance, Color.red);
             lazerPoint.transform.position = new Vector3 (point.point.x, point.point.y, point.point.z);
