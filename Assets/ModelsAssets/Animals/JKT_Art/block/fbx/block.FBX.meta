@@ -1,63 +1,155 @@
 fileFormatVersion: 2
 guid: be98b0f5437ea4347b17128263d79bf0
 ModelImporter:
-  serializedVersion: 16
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: box_00
-    100004: box_01
-    100006: box_02
-    100008: box_03
-    100010: box_04
-    100012: box_05
-    100014: box_06
-    400000: //RootNode
-    400002: box_00
-    400004: box_01
-    400006: box_02
-    400008: box_03
-    400010: box_04
-    400012: box_05
-    400014: box_06
-    2300000: box_00
-    2300002: box_01
-    2300004: box_02
-    2300006: box_03
-    2300008: box_04
-    2300010: box_05
-    2300012: box_06
-    2300014: //RootNode
-    3300000: box_00
-    3300002: box_01
-    3300004: box_02
-    3300006: box_03
-    3300008: box_04
-    3300010: box_05
-    3300012: box_06
-    3300014: //RootNode
-    4300000: box_05
-    4300002: box_00
-    4300004: box_01
-    4300006: box_02
-    4300008: box_03
-    4300010: box_04
-    4300012: box_06
-    9500000: //RootNode
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: box_00
+  - first:
+      1: 100004
+    second: box_01
+  - first:
+      1: 100006
+    second: box_02
+  - first:
+      1: 100008
+    second: box_03
+  - first:
+      1: 100010
+    second: box_04
+  - first:
+      1: 100012
+    second: box_05
+  - first:
+      1: 100014
+    second: box_06
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: box_00
+  - first:
+      4: 400004
+    second: box_01
+  - first:
+      4: 400006
+    second: box_02
+  - first:
+      4: 400008
+    second: box_03
+  - first:
+      4: 400010
+    second: box_04
+  - first:
+      4: 400012
+    second: box_05
+  - first:
+      4: 400014
+    second: box_06
+  - first:
+      23: 2300000
+    second: box_00
+  - first:
+      23: 2300002
+    second: box_01
+  - first:
+      23: 2300004
+    second: box_02
+  - first:
+      23: 2300006
+    second: box_03
+  - first:
+      23: 2300008
+    second: box_04
+  - first:
+      23: 2300010
+    second: box_05
+  - first:
+      23: 2300012
+    second: box_06
+  - first:
+      23: 2300014
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: box_00
+  - first:
+      33: 3300002
+    second: box_01
+  - first:
+      33: 3300004
+    second: box_02
+  - first:
+      33: 3300006
+    second: box_03
+  - first:
+      33: 3300008
+    second: box_04
+  - first:
+      33: 3300010
+    second: box_05
+  - first:
+      33: 3300012
+    second: box_06
+  - first:
+      33: 3300014
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: box_05
+  - first:
+      43: 4300002
+    second: box_00
+  - first:
+      43: 4300004
+    second: box_01
+  - first:
+      43: 4300006
+    second: box_02
+  - first:
+      43: 4300008
+    second: box_03
+  - first:
+      43: 4300010
+    second: box_04
+  - first:
+      43: 4300012
+    second: box_06
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -65,35 +157,61 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
