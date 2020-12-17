@@ -36,6 +36,7 @@ public class Level1 : MonoBehaviour
                 {
                    if (obj!=null) obj.GoToEnd();
                 }
+                GameObject.FindGameObjectWithTag("Dragon").GetComponent<DragonMove>().anim.SetTrigger("CatsSave");
             }
 
         }

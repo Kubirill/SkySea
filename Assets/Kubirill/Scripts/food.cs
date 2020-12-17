@@ -12,7 +12,7 @@ public class food : MonoBehaviour
     {
         dragon = GameObject.FindGameObjectWithTag("Dragon");
         script = dragon.GetComponent<DragonMove>();
-        if ((!script.isFood)&&Vector3.Distance(transform.position,dragon.transform.position)<10)
+        if ((!script.isFood)&&Vector3.Distance(transform.position,dragon.transform.position)<20)
         {
 
             script.target = gameObject;
@@ -24,7 +24,7 @@ public class food : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!script.isFood && Vector3.Distance(transform.position, dragon.transform.position) < 10)
+        if (!script.isFood && Vector3.Distance(transform.position, dragon.transform.position) < 20)
         {
             script.target = gameObject;
             script.isFood = true;
