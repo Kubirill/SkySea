@@ -39375,7 +39375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: {fileID: 1394940236}
-  startButton: {fileID: 1212847627}
+  startButton: {fileID: 0}
 --- !u!1 &1367545931
 GameObject:
   m_ObjectHideFlags: 0
