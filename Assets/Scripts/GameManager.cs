@@ -7,9 +7,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] DragonMove move;
     [SerializeField] GameObject startButton;
+    private void Start()
+    {
+        startButton.SetActive(true);
+    }
 
     public void PressStart()
     {
+
         move.enabled = true;
         // disable kinematic
         move.gameObject.GetComponent<Rigidbody>().useGravity = true;
@@ -18,7 +23,7 @@ public class GameManager : MonoBehaviour
     IEnumerator DeleteStartButton()
     {
         yield return new WaitForSeconds(5f);
-        Destroy(startButton);
+        startButton.SetActive(false);
     }
     public void Restart()
     {
