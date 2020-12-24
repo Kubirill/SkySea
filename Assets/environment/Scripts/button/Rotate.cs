@@ -32,29 +32,28 @@ public class Rotate : MonoBehaviour
     }
     public void Update()
     {
-        if ((Vector3.Distance(DragonRigidbody.transform.position, transform.position) > 1)&& (anim.GetBool("Press")))
+        if ((Vector3.Distance(DragonRigidbody.transform.position, transform.position) > 1) && (anim.GetBool("Press")))
         {
             _audioSource.Play();
             anim.SetBool("Press", false);
             DragonRigidbody.isKinematic = false;
         }
-        
+
     }
     /*private void OnTriggerStay () =>
 		 plot.DORotate (new Vector3 (0, plot.rotation.eulerAngles.y +
 			(angle * (left ? -1 : 1)), 0), smooth);*/
     public void OnTriggerStay(Collider other)
     {
-        DragonRigidbody.isKinematic = true;
         if (other.tag == "Dragon")
         {
-
+            DragonRigidbody.isKinematic = true;
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
             {
-                
+
                 if (!anim.GetBool("Press"))
                 {
-                    
+
                     anim.SetBool("Press", true);
 
                     _audioSource.Play();
@@ -65,10 +64,10 @@ public class Rotate : MonoBehaviour
             {
                 if (anim.GetBool("Press"))
                 {
-                   
+
                     _audioSource.Play();
                     anim.SetBool("Press", false);
-                   
+
                 }
             }
         }
@@ -79,7 +78,7 @@ public class Rotate : MonoBehaviour
         DragonRigidbody.isKinematic = anim.GetBool("Press");
 
     }
-   
+
     void Rotation()
     {
         plotRb.DORotate(new Vector3(0, plot.rotation.eulerAngles.y + (angle * (left ? -1 : 1)), 0), smooth);

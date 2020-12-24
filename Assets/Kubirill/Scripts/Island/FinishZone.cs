@@ -11,11 +11,13 @@ public class FinishZone : MonoBehaviour
     public float speed = 10;
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlotForCats") 
+        if (other.tag == "PlotForCats")
         {
             ship.DOMove(targetZone.position, speed);
             ship.DORotateQuaternion(targetZone.rotation, speed);
+
             foreach (Collider button in buttons) button.enabled = false;
+            ship.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }

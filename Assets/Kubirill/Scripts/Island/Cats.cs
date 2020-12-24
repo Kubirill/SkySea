@@ -39,8 +39,8 @@ public class Cats : MonoBehaviour
                 if (Vector3.Distance(transform.position, dragon.transform.position) < 3)
                 {
                     anim.SetTrigger("Walk");
-                    transform.DOLocalMoveX(Mathf.Max( transform.localPosition.x - transform.forward.x / 5, BackWall.localPosition.x) ,0.5f);
-                    transform.DOLocalMoveZ(Mathf.Clamp( transform.localPosition.z - transform.forward.z / 5, RightWall.localPosition.z,LeftWall.localPosition.z) ,0.5f);
+                    transform.DOLocalMoveX(Mathf.Max(transform.localPosition.x - transform.forward.x / 5, BackWall.localPosition.x), 0.5f);
+                    transform.DOLocalMoveZ(Mathf.Clamp(transform.localPosition.z - transform.forward.z / 5, RightWall.localPosition.z, LeftWall.localPosition.z), 0.5f);
                 }
 
             }
@@ -56,45 +56,49 @@ public class Cats : MonoBehaviour
             transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
         }
     }
-  
+    public void StopCats()
+    {
+        transform.parent = null;
+        transform.DOJump(targetJump.position, 2, 1, 2);
+        transform.LookAt(targetJump.position);
+        anim.SetTrigger("Idle");
+        isStop = true;
+    }
     public void OnTriggerEnter(Collider other)
     {
-       // Debug.Log(other.tag + " " + name);
-        if (other.tag== "SafeZone")
+        // Debug.Log(other.tag + " " + name);
+        if (other.tag == "SafeZone")
         {
             isAfraid = false;
             transform.parent = dragon.transform.parent;
             anim.SetTrigger("Idle");
-            rb.isKinematic = true;
-            rb.useGravity = false;
+            // rb.isKinematic = true;
+            // rb.useGravity = false;
             transform.DOMove(safeJump.position, 1);
             transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
             //GetComponent<Collider>().isTrigger = true;
         }
-        if (other.tag == "StopForCats")
+        /*if (other.tag == "StopForCats")
         {
-            rb.isKinematic = false;
-            rb.useGravity = true;
-            transform.parent = null;
-            transform.DOJump(targetJump.position, 1, 1, 1);
-            transform.LookAt(targetJump.position);
-            anim.SetTrigger("Walk");
-            isStop = true;
-        
-        }
-        if ((other.tag == "PlotForCats")&&isAfraid)
+            //rb.isKinematic = false;
+           // rb.useGravity = true;
+
+
+        }*/
+        if ((other.tag == "PlotForCats") && isAfraid)
         {
             //Debug.Log(other.tag + "plooot " + name);
             transform.DOPause();
             isAfraid = false;
             transform.parent = dragon.transform.parent;
-            rb.isKinematic = false;
-            rb.useGravity = true;
+            Destroy(rb);
+            //  rb.isKinematic = true;
+            // rb.useGravity = true;
             transform.parent = null;
-            transform.DOJump(safeJump.position, 1, 1, 1);
+            transform.DOJump(safeJump.position, 2, 1, 1);
             transform.LookAt(safeJump.position);
             anim.SetTrigger("Walk");
-            
+
 
         }
     }
@@ -102,8 +106,8 @@ public class Cats : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlotForCats")
         {
-            rb.isKinematic = false;
-            rb.useGravity = true;
+            // rb.isKinematic = true;
+            // rb.useGravity = true;
             transform.parent = null;
             transform.DOJump(safeJump.position, 3, 1, 3);
             transform.LookAt(safeJump.position);

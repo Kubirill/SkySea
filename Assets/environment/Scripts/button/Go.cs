@@ -72,8 +72,8 @@ public class Go : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
-            
-            SmoothEnd();
+
+        SmoothEnd();
         }
 
     }
@@ -85,9 +85,10 @@ public class Go : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        heroRigidbody.isKinematic = !dragonRigidbody.isKinematic;
         if (speed == 0)
         {
-            
+
             heroRigidbody.isKinematic = true;
             heroRigidbody.isKinematic = false;
         }
