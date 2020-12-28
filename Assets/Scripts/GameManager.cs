@@ -5,14 +5,14 @@ using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
 
-    [SerializeField] DragonMove move;
+    [SerializeField] DragonMove DragonMove;
     [SerializeField] GameObject startButton;
 
     public void PressStart()
     {
-        move.enabled = true;
+        DragonMove.enabled = true;
         // disable kinematic
-        move.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        DragonMove.gameObject.GetComponent<Rigidbody>().useGravity = true;
         if (startButton == null)
         {
             startButton = GameObject.Find("Menu/StartButton");

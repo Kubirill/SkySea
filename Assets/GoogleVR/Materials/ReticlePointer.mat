@@ -60,19 +60,19 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DistanceInMeters: 2
+    - _DistanceInMeters: 2.0926166
     - _DstBlend: 0
     - _Glossiness: 0.5
-    - _InnerDiameter: 1.5
+    - _InnerDiameter: 2.79e-43
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OuterDiameter: 2
+    - _OuterDiameter: 0.01826164
     - _Parallax: 0.02
     - _Radius: 0
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.25, b: 0.25, a: 1}
+    - _Color: {r: 1, g: 0.09019608, b: 0.1137255, a: 0.48235294}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
