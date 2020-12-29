@@ -34,10 +34,13 @@ public class Go : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
+            print("Dragon press to button!");
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
             {
+                print($"40. Go -> other : {other}");
                 if (!anim.GetBool("Press"))
                 {
+                    print($"43. Go -> other : {other}");
                     //smooth for start
                     DOTween.To(() => speed, x => speed = x, maxspeed, 1); // to max speed, duration 1
                     anim.SetBool("Press", true);
@@ -73,7 +76,7 @@ public class Go : MonoBehaviour
         if (other.tag == "Dragon")
         {
 
-        SmoothEnd();
+            SmoothEnd();
         }
 
     }

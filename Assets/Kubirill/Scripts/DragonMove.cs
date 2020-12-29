@@ -97,10 +97,10 @@ public class DragonMove : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        // Debug.Log("tr");
+        print($"100. DragonMove -> other : {other}");
         if (other.gameObject.tag == "food")
         {
-            // Debug.Log("foodtr");
+            print("I found food!");
             target = other.gameObject;
             anim.SetTrigger("Food");
         }
