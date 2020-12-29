@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] DragonMove DragonMove;
     [SerializeField] GameObject startButton;
+    [SerializeField] GameObject dragonButton;
 
+    [SerializeField] SpriteRenderer logo;
     public void PressStart()
     {
         DragonMove.enabled = true;
@@ -17,7 +19,14 @@ public class GameManager : MonoBehaviour
         {
             startButton = GameObject.Find("Menu/StartButton");
         }
-        startButton.transform.DOMoveY(20, 5);
+        startButton.transform.DOScale(new Vector3(0.001f, 0.001f, 0.001f), 1f);
+        dragonButton.transform.DOScale(new Vector3(0.001f, 0.001f, 0.001f), 1f);
+        StartCoroutine(ChangeColorOfLogo());
+    }
+    IEnumerator ChangeColorOfLogo()
+    {
+        yield return new WaitForSeconds(1f);
+        logo.DOColor(new Color(logo.color.r, logo.color.g, logo.color.g, 0), 20);
     }
     IEnumerator DeleteStartButton()
     {

@@ -1,7 +1,4 @@
-﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class food : MonoBehaviour
 {
@@ -12,15 +9,12 @@ public class food : MonoBehaviour
     {
         dragon = GameObject.FindGameObjectWithTag("Dragon");
         script = dragon.GetComponent<DragonMove>();
-        if ((!script.isFood)&&Vector3.Distance(transform.position,dragon.transform.position)<20)
+        if ((!script.isFood) && Vector3.Distance(transform.position, dragon.transform.position) < 20)
         {
-
             script.target = gameObject;
             script.isFood = true;
-
         }
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +22,6 @@ public class food : MonoBehaviour
         {
             script.target = gameObject;
             script.isFood = true;
-           
         }
     }
 }

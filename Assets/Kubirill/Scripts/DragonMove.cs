@@ -30,7 +30,6 @@ public class DragonMove : MonoBehaviour
         if (target == null) target = targetLazer;
     }
 
-
     // Update is called once per frame
     void Update()
     {
@@ -48,7 +47,6 @@ public class DragonMove : MonoBehaviour
         }
         if ((anim.GetCurrentAnimatorStateInfo(0).IsName("idle") || (anim.GetCurrentAnimatorStateInfo(0).IsName("stirr_on_ground")) && pointOfInteres != player))
         {
-
             transform.DOLookAt(pointOfInteres.position, duration / 5);
             //rb.useGravity = true;
         }
@@ -57,7 +55,6 @@ public class DragonMove : MonoBehaviour
             if (((Vector3.Distance(target.transform.position - new Vector3(0, target.transform.position.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) > 0.6f)) || ((Vector3.Distance(targetLazer.transform.up, Vector3.up) > 0.1) && (!isFood))) anim.SetBool("Finish", false);
             else if ((Vector3.Distance(target.transform.position - new Vector3(0, target.transform.position.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) < 0.3f))
             {
-
                 if (!anim.GetBool("Finish"))
                 {
                     //transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), 0.1f);
@@ -66,17 +63,11 @@ public class DragonMove : MonoBehaviour
 
                     //transform.transform.localPosition= new Vector3(target.transform.localPosition.x, transform.localPosition.y, target.transform.localPosition.z);
                     transform.transform.DOPause();
-
                 }
-                anim.SetBool("Finish", true);
+                anim.SetBool("Finish", false);
                 rb.DOPause();
-
             }
-
             anim.SetBool("FindTarget", true);
-
-
-
         }
         else
         {
@@ -97,7 +88,6 @@ public class DragonMove : MonoBehaviour
                 if ((transform.position.y >= transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y) || (Vector3.Distance(transform.position, target.transform.position) < 10))
                 {
                     transform.DOLocalMove(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position) + addTarget / 2 * (isFood ? 0 : 1), duration - (isFood ? 1 : 0));
-
                 }
                 else transform.DOLocalMoveY(transform.parent.worldToLocalMatrix.MultiplyPoint(target.transform.position).y + addTarget.y / 2 * (isFood ? 0 : 1) + 1, (duration - (isFood ? 1 : 0)) / 2);
             }
