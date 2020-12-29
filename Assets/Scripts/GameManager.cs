@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     {
         DragonMove.enabled = true;
         // disable kinematic
-        DragonMove.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        // DragonMove.gameObject.GetComponent<Rigidbody>().useGravity = true;
         if (startButton == null)
         {
             startButton = GameObject.Find("Menu/StartButton");
@@ -30,8 +30,10 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator DeleteStartButton()
     {
-        yield return new WaitForSeconds(5f);
-        startButton.SetActive(false);
+        yield return new WaitForSeconds(20f);
+        // destroy our objects
+        Destroy(startButton);
+        Destroy(logo.gameObject);
     }
     public void Restart()
     {

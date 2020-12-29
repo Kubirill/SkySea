@@ -39374,8 +39374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70aac7d830cf824c90ec7ced22e5cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {fileID: 1394940236}
-  startButton: {fileID: 0}
+  DragonMove: {fileID: 1394940236}
+  startButton: {fileID: 1212847627}
+  dragonButton: {fileID: 1212847627}
+  logo: {fileID: 0}
 --- !u!1 &1367545931
 GameObject:
   m_ObjectHideFlags: 0
@@ -39824,6 +39826,11 @@ PrefabInstance:
       propertyPath: targetLazer
       value: 
       objectReference: {fileID: 1284571496}
+    - target: {fileID: 7393705840660724323, guid: de3a816f44d522f4d9170daea9c0d5a5,
+        type: 3}
+      propertyPath: pointOfInteres
+      value: 
+      objectReference: {fileID: 1500547141}
     - target: {fileID: 7393705840660724324, guid: de3a816f44d522f4d9170daea9c0d5a5,
         type: 3}
       propertyPath: m_Name

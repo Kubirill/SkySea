@@ -47100,17 +47100,17 @@ PrefabInstance:
     - target: {fileID: 3177972661097247942, guid: 804f91b85698fad4fbe1243157716e79,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.987
+      value: 1.984
       objectReference: {fileID: 0}
     - target: {fileID: 3177972661097247942, guid: 804f91b85698fad4fbe1243157716e79,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.069
+      value: 1.003
       objectReference: {fileID: 0}
     - target: {fileID: 3177972661097247942, guid: 804f91b85698fad4fbe1243157716e79,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.472
+      value: 6.47
       objectReference: {fileID: 0}
     - target: {fileID: 3177972661097247942, guid: 804f91b85698fad4fbe1243157716e79,
         type: 3}
@@ -78612,7 +78612,7 @@ PrefabInstance:
     - target: {fileID: 4369412608019358181, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.2
+      value: 64.3
       objectReference: {fileID: 0}
     - target: {fileID: 4369412608019358181, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
@@ -78622,7 +78622,7 @@ PrefabInstance:
     - target: {fileID: 4369412608019358181, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 61.7
+      value: 50.4
       objectReference: {fileID: 0}
     - target: {fileID: 4369412608019358203, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
@@ -78637,6 +78637,11 @@ PrefabInstance:
     - target: {fileID: 4369412608019358203, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369412608019463616, guid: 46353c7813bbb28409bbcd539dbcea71,
+        type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4369412608019463618, guid: 46353c7813bbb28409bbcd539dbcea71,
@@ -78698,6 +78703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: far clip plane
       value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603545292449338491, guid: 46353c7813bbb28409bbcd539dbcea71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7161811439434602209, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}

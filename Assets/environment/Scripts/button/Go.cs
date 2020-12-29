@@ -34,7 +34,7 @@ public class Go : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
-            print("Dragon press to button!");
+           
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
             {
                 print($"40. Go -> other : {other}");
