@@ -24879,7 +24879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d75090a6aa124b747a842bf2b5ae80cd, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d75090a6aa124b747a842bf2b5ae80cd, type: 3}
       propertyPath: m_LocalScale.x
@@ -77797,7 +77797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &3510917696616624717
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -77974,14 +77974,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3510917696749698748}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.96, y: 1.01, z: 20.18}
-  m_LocalScale: {x: 4, y: 4, z: 0.3}
+  m_LocalRotation: {x: 0, y: 0.43523106, z: 0, w: 0.9003188}
+  m_LocalPosition: {x: 6.92, y: 3.59, z: 11.23}
+  m_LocalScale: {x: 3, y: 3, z: 0.3}
   m_Children:
   - {fileID: 3510917696457766461}
   m_Father: {fileID: 3510917697167243988}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 51.6, z: 0}
 --- !u!1 &3510917696749698748
 GameObject:
   m_ObjectHideFlags: 0
@@ -78017,7 +78017,6 @@ MonoBehaviour:
   DragonMove: {fileID: 860852254}
   startButton: {fileID: 3510917696749698748}
   dragonButton: {fileID: 1524636018}
-  logo: {fileID: 129524634}
 --- !u!4 &3510917697167243988
 Transform:
   m_ObjectHideFlags: 0
