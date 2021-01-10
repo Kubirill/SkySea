@@ -12,7 +12,7 @@ public class ButtomLevel2 : MonoBehaviour
     public Transform leftClose;
     public Transform rightClose;
     public float speed;
-    bool stay = false;
+    bool stay=false;
     bool isOpen = false;
     Animator anim;
     public void Start()
@@ -30,7 +30,7 @@ public class ButtomLevel2 : MonoBehaviour
                 if (other.tag == "barrel") GameObject.FindGameObjectWithTag("Dragon").GetComponent<DragonMove>().anim.SetTrigger("CatsSave");
             }
         }
-
+       
     }
     public void OnTriggerExit(Collider other)
     {
@@ -41,7 +41,7 @@ public class ButtomLevel2 : MonoBehaviour
     }
     public void LateUpdate()
     {
-        if ((!stay) && (isOpen))
+        if ((!stay)&&(isOpen))
         {
             anim.SetBool("Press", false);
             isOpen = false;
