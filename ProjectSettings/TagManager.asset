@@ -14,6 +14,7 @@ TagManager:
   - PlotForCats
   - FinishZone
   - TargetFinish
+  - Laser
   layers:
   - Default
   - TransparentFX
