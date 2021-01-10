@@ -31410,7 +31410,12 @@ PrefabInstance:
     - target: {fileID: 3175837000114664873, guid: 804f91b85698fad4fbe1243157716e79,
         type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3175837000114664878, guid: 804f91b85698fad4fbe1243157716e79,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3177972661097247942, guid: 804f91b85698fad4fbe1243157716e79,
         type: 3}
@@ -44623,6 +44628,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9798862aef6c4d047a05ef18fde018f3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e482b39d7ed22034ca6a61dd145ee82b, type: 3}
+--- !u!136 &1365851039 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 3175837000114664878, guid: 804f91b85698fad4fbe1243157716e79,
+    type: 3}
+  m_PrefabInstance: {fileID: 985846926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1367545931
 GameObject:
   m_ObjectHideFlags: 0
@@ -72442,6 +72453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 964338211103633311}
   isItStart: 0
+  appleCollider: {fileID: 1365851039}
 --- !u!54 &964338209562683244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -77580,7 +77592,7 @@ PrefabInstance:
     - target: {fileID: 5538095627889823817, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5538095627889823818, guid: 46353c7813bbb28409bbcd539dbcea71,
         type: 3}
@@ -77946,6 +77958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 964338211103633311}
   isItStart: 1
+  appleCollider: {fileID: 1365851039}
 --- !u!54 &4457241422241908443
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -6,25 +6,25 @@ public class LookAtButton : MonoBehaviour
 {
     [SerializeField] GameManager menu;
     [SerializeField] bool isItStart;
+    [SerializeField] CapsuleCollider appleCollider;
     bool bigLaser = false;
     GameObject laser;
-    private void OnTriggerEnter(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Laser") && !bigLaser)
         {
-            var laserScale = other.gameObject.transform.localScale;
-            other.gameObject.transform.DOScale(laserScale * 2, 0.5f);
+            other.gameObject.transform.DOScale(other.gameObject.transform.localScale * 2, 0.5f);
             bigLaser = true;
             StartCoroutine(Press(other.gameObject));
         }
     }
 
-    private void OnTriggerExit(Collision other)
+    private void OnCollisionExit(Collision other)
     {
         if (other.gameObject.CompareTag("Laser") && bigLaser)
         {
             var laserScale = other.gameObject.transform.localScale;
-            other.gameObject.transform.DOScale(laserScale / 2, 0.5f);
+            other.gameObject.transform.DOScale(other.gameObject.transform.localScale / 2, 0.5f);
             bigLaser = false;
         }
     }
@@ -36,6 +36,9 @@ public class LookAtButton : MonoBehaviour
         if (bigLaser == true)
             if (isItStart)
             {
+                laser.transform.DOScale(laser.transform.localScale / 2, 0.5f);
+                appleCollider.enabled = true;
+                appleCollider.gameObject.GetComponent<Rigidbody>().useGravity = true;
                 laser.GetComponent<SphereCollider>().enabled = false;
                 menu.PressStart();
             }
