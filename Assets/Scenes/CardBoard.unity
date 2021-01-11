@@ -76377,6 +76377,7 @@ GameObject:
   - component: {fileID: 8393455552191986603}
   - component: {fileID: 8393455552191986600}
   - component: {fileID: 8393455552191986602}
+  - component: {fileID: 8393455552191986604}
   m_Layer: 0
   m_Name: Plot
   m_TagString: Untagged
@@ -76413,6 +76414,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!65 &8393455552191986604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8393455552191986601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.112477, y: 0.2648964, z: 22.63}
+  m_Center: {x: 0.46940756, y: -0.5575518, z: 0}
 --- !u!33 &8419467816032029497
 MeshFilter:
   m_ObjectHideFlags: 0
