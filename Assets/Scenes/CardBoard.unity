@@ -44860,7 +44860,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.014978921, y: 0.016077558, z: 0.0038024504}
+  m_Size: {x: 0.014978921, y: 0.016077558, z: 0.00200245}
   m_Center: {x: -0.00033948838, y: 0.00049018324, z: 0.0022861732}
 --- !u!65 &3886239047293849024
 BoxCollider:
@@ -44873,7 +44873,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.014465451, y: 0.014289174, z: 0.0020686176}
+  m_Size: {x: 0.014465451, y: 0.014289174, z: 0.00200245}
   m_Center: {x: -0.00024241209, y: 0.0006882918, z: 0.0014192583}
 --- !u!1 &3903149541757327354
 GameObject:
@@ -46089,7 +46089,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4642063, y: 0.28978372, z: 1.4498343}
+  m_Size: {x: 1.4642063, y: 0.4, z: 1.49834}
   m_Center: {x: -0.03226787, y: 0.59623176, z: -0.027065992}
 --- !u!82 &5074285388995629026
 AudioSource:
