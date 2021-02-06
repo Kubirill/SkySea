@@ -46,7 +46,7 @@ public class DragonMove : MonoBehaviour
             transform.DOLookAt(pointOfInteres.position, duration/5);
             //rb.useGravity = true;
         }
-        if ((anim.GetCurrentAnimatorStateInfo(0).IsName("idle")|| (anim.GetCurrentAnimatorStateInfo(0).IsName("stirr_on_ground")) && pointOfInteres !=player))
+        if (((anim.GetCurrentAnimatorStateInfo(0).IsName("idle")|| (anim.GetCurrentAnimatorStateInfo(0).IsName("stirr_on_ground"))) && pointOfInteres !=player))
         {
             
             transform.DOLookAt(pointOfInteres.position, duration / 5);
