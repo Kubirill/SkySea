@@ -2,12 +2,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEngine.Rendering.PostProcessing;
+
 public class GameManager : MonoBehaviour
 {
 
     [SerializeField] DragonMove DragonMove;
     [SerializeField] GameObject startButton;
+    [SerializeField] GameObject playerCamera;
     string btnEvent;
+    bool useEffects = true;
     // timers for press on long focus
     public void Focus(string buttonEvent)
     {
@@ -46,5 +50,12 @@ public class GameManager : MonoBehaviour
     void Pass()
     {
         print("Nothing to press..");
+    }
+    public void MakeEffects()
+    {
+        useEffects = !useEffects;
+        playerCamera.GetComponent<PostProcessVolume>().enabled = useEffects;
+        playerCamera.GetComponent<PostProcessLayer>().enabled = useEffects;
+
     }
 }
