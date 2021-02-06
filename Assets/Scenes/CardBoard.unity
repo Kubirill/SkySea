@@ -29466,7 +29466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df711d21582d8c4e8e7ad78ba7a9ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragon: {fileID: 0}
+  dragon: {fileID: 2373612391554763312}
   tformMother: {fileID: 1317164206}
   target: {fileID: 1015977737}
 --- !u!1 &1828427096
@@ -44899,6 +44899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DragonMove: {fileID: 2373612391554763312}
   startButton: {fileID: 0}
+  playerCamera: {fileID: 0}
 --- !u!4 &3510917697167243988
 Transform:
   m_ObjectHideFlags: 0
@@ -54336,7 +54337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8393455552191986601}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -22.1, y: 0, z: 586.8}
+  m_LocalPosition: {x: 54.2, y: 0, z: 179.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4047755635006427228}
