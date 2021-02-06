@@ -3670,7 +3670,7 @@ MonoBehaviour:
   player: {fileID: 2373612391554763319}
   dragon: {fileID: 2373612391554763319}
   targetJump: {fileID: 1861993811}
-  safeJump: {fileID: 0}
+  safeJump: {fileID: 470069310286875993}
   BackWall: {fileID: 1302490626}
   LeftWall: {fileID: 48462854}
   RightWall: {fileID: 1657233512}
@@ -8950,7 +8950,7 @@ MonoBehaviour:
   player: {fileID: 2373612391554763319}
   dragon: {fileID: 2373612391554763319}
   targetJump: {fileID: 801396054}
-  safeJump: {fileID: 0}
+  safeJump: {fileID: 7619968821556099810}
   BackWall: {fileID: 1302490626}
   LeftWall: {fileID: 48462854}
   RightWall: {fileID: 1657233512}
@@ -18069,7 +18069,7 @@ MonoBehaviour:
   player: {fileID: 2373612391554763319}
   dragon: {fileID: 2373612391554763319}
   targetJump: {fileID: 1295122236}
-  safeJump: {fileID: 0}
+  safeJump: {fileID: 1584561817103798484}
   BackWall: {fileID: 1302490626}
   LeftWall: {fileID: 48462854}
   RightWall: {fileID: 1657233512}
@@ -54336,7 +54336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8393455552191986601}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 59.74, y: 0, z: 219.72}
+  m_LocalPosition: {x: -22.1, y: 0, z: 586.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4047755635006427228}
