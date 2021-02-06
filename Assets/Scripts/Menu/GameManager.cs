@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject startButton;
     [SerializeField] GameObject playerCamera;
     string btnEvent;
-    bool useEffects = true;
+    bool useEffects = false;
     // timers for press on long focus
     public void Focus(string buttonEvent)
     {
@@ -54,10 +54,10 @@ public class GameManager : MonoBehaviour
     }
     public void MakeEffects()
     {
-        useEffects = !useEffects;
         print($"57. GameManager -> useEffects : {useEffects}");
         playerCamera.GetComponent<PostProcessVolume>().enabled = useEffects;
         playerCamera.GetComponent<PostProcessLayer>().enabled = useEffects;
+        useEffects = !useEffects;
 
     }
 }
