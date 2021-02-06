@@ -2,12 +2,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEngine.Rendering.PostProcessing;
+
 public class GameManager : MonoBehaviour
 {
 
     [SerializeField] DragonMove DragonMove;
     [SerializeField] GameObject startButton;
+    [SerializeField] GameObject playerCamera;
     string btnEvent;
+    bool useEffects = true;
     // timers for press on long focus
     public void Focus(string buttonEvent)
     {
@@ -18,16 +22,13 @@ public class GameManager : MonoBehaviour
     public void UnFocus()
     {
         print("Defocus Button");
-        btnEvent = "break";
+        btnEvent = "Pass";
     }
     IEnumerator Press()
     {
         // if we look at button 2s, we press button
         yield return new WaitForSeconds(2f);
-        if (btnEvent == "start")
-            PressStart();
-        else if (btnEvent == "restart")
-            Restart();
+        Invoke(btnEvent, 0);
     }
     public void PressStart()
     {
@@ -45,5 +46,16 @@ public class GameManager : MonoBehaviour
     {
         print("Restart game! 🔁");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    void Pass()
+    {
+        print("Nothing to press..");
+    }
+    public void MakeEffects()
+    {
+        useEffects = !useEffects;
+        playerCamera.GetComponent<PostProcessVolume>().enabled = useEffects;
+        playerCamera.GetComponent<PostProcessLayer>().enabled = useEffects;
+
     }
 }
