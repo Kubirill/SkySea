@@ -34,7 +34,7 @@ public class Go : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
-           
+
             if (other.gameObject.GetComponent<DragonMove>().anim.GetBool("Finish"))
             {
                 print($"40. Go -> other : {other}");
@@ -75,7 +75,6 @@ public class Go : MonoBehaviour
     {
         if (other.tag == "Dragon")
         {
-
             SmoothEnd();
         }
 
@@ -109,4 +108,3 @@ public class Go : MonoBehaviour
         heroRigidbody.velocity = powerOfMove;
     }
 }
-

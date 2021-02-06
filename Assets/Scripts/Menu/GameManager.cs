@@ -7,8 +7,9 @@ using UnityEngine.Rendering.PostProcessing;
 public class GameManager : MonoBehaviour
 {
 
-    [SerializeField] DragonMove DragonMove;
+    [SerializeField] DragonMove dragonMove;
     [SerializeField] GameObject startButton;
+    [SerializeField] GameObject effectButton;
     [SerializeField] GameObject playerCamera;
     string btnEvent;
     bool useEffects = false;
@@ -35,13 +36,15 @@ public class GameManager : MonoBehaviour
     {
         print("Start game 🏁");
         // we start game
-        DragonMove.enabled = true;
-        DragonMove.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        dragonMove.enabled = true;
+        dragonMove.gameObject.GetComponent<Rigidbody>().useGravity = true;
         if (startButton == null)
             startButton = GameObject.Find("Menu/StartButton");
         // delete button
         startButton.transform.DOScale(new Vector3(0.001f, 0.001f, 0.001f), 1f);
+        effectButton.transform.DOScale(new Vector3(0.001f, 0.001f, 0.001f), 1f);
         Destroy(startButton, 2f);
+        Destroy(effectButton, 2f);
     }
     public void Restart()
     {
