@@ -18,16 +18,13 @@ public class GameManager : MonoBehaviour
     public void UnFocus()
     {
         print("Defocus Button");
-        btnEvent = "break";
+        btnEvent = "Pass";
     }
     IEnumerator Press()
     {
         // if we look at button 2s, we press button
         yield return new WaitForSeconds(2f);
-        if (btnEvent == "start")
-            PressStart();
-        else if (btnEvent == "restart")
-            Restart();
+        Invoke(btnEvent, 0);
     }
     public void PressStart()
     {
@@ -45,5 +42,9 @@ public class GameManager : MonoBehaviour
     {
         print("Restart game! 🔁");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    void Pass()
+    {
+        print("Nothing to press..");
     }
 }
