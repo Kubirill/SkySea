@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     // timers for press on long focus
     public void Focus(string buttonEvent)
     {
+        // the button function is set by the name on the button itself
         btnEvent = buttonEvent;
         print("Focus Button: " + btnEvent);
         StartCoroutine(Press());
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
     public void MakeEffects()
     {
         useEffects = !useEffects;
+        print($"57. GameManager -> useEffects : {useEffects}");
         playerCamera.GetComponent<PostProcessVolume>().enabled = useEffects;
         playerCamera.GetComponent<PostProcessLayer>().enabled = useEffects;
 
