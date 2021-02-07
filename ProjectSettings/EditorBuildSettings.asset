@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Kubirill/Scenes/DragonTestBoat.unity
-    guid: fc11aadebfe28c64c8088b761e7d7624
-  m_configObjects: {}
+    path: Assets/Scenes/CardBoard.unity
+    guid: a4b0b0936bc22314981d2ff75b8c5b91
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4aa54ee9088419b49a44384b5218d4cc,
+      type: 2}
+    com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: 1431dda4ab5cb1047ab6292da6ace6a9,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 517e233d363dd2149acfc8f1cd1ed971,
+      type: 2}

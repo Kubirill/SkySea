@@ -11,6 +11,10 @@ TagManager:
   - barrel
   - SafeZone
   - StopForCats
+  - PlotForCats
+  - FinishZone
+  - TargetFinish
+  - Laser
   layers:
   - Default
   - TransparentFX
@@ -23,7 +27,7 @@ TagManager:
   - Lighting
   - Ground
   - Postprocessing
-  - 
+  - camera
   - 
   - 
   - 
