@@ -107,7 +107,7 @@ public class DragonMove : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("tr");
+     //   Debug.Log("tr");
         if (other.gameObject.tag == "food")
         {
             Debug.Log("foodtr");
